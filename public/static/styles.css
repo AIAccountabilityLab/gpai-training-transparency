@@ -206,6 +206,7 @@ table td.data-cell.closed { background-color:#ca6014;}
 table td.data-cell.open {	background-color:#3e9b74;}
 table td.data-cell.partial { background-color:#dd9f1c;}
 table td.data-cell.na { background-color:#a0a0a0 }
+table td.data-cell.na_home { background-color:#a5410f }
 table td.data-cell.outline { border:1px solid black;}
 
 td.data-cell a {
@@ -218,7 +219,7 @@ td a:link, td a:visited, td a:active {
 	text-decoration:none;
 	color:#000;
 }
-td.data-cell.closed a, td.data-cell.partial a, td.data-cell.open a {
+td.data-cell.closed a, td.data-cell.partial a, td.data-cell.open a, td.data-cell.na_home a {
 	color:#fff;
 }
 td.data-cell a:hover {

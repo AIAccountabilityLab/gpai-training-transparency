@@ -16,22 +16,25 @@ article {
     font-size: 0.8rem;
 }
 #evaluations {
-    font-size: 0.5rem;
-    border: 1px solid darkgray;
+    font-size: 0.7rem;
 }
+#evaluations .grade.na { background-color:darkgray; }
 th {
     text-align: center;
-    border-left: 1px solid darkgray;
-    border-right: 1px solid darkgray;
-}
-td {
-    border-left: 1px solid darkgray;
-    border-right: 1px solid darkgray;
+    font-size: 0.7rem;
 }
 td {
     width: 25px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
+.outline {
+    font-size: 0.7rem;
+}
+span.openness { display:inline-block;
+padding:1px 5px; color:#ffffff }
+span.open { background-color:#3e9b74; }
+span.partial { background-color:#dd9f1c; }
+span.closed { background-color:#ca6014; }
 
     </style>
     <link href="static/favicon.png" rel="icon" type="image/x-icon"/>
@@ -52,11 +55,11 @@ td {
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
     <ul id="main-menu" class="menu">
-      <li><a href="index">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li><a href="detailed-overview">Analysis</a></li>
       <li><a href="methodology">Methodology</a></li>
       <li><a href="recommendations">Recommendations</a></li>
-      <li><a href="about">Contact</a></li>
+      <li style="margin-right: 5px;"><a href="about">Contact</a></li>
     </ul>
   </nav>
   <main class="container">
@@ -64,21 +67,23 @@ td {
       
     <header>
         <h1>Claude Sonnet 4.5</h1>
-        <h2 style="font-size: 0.8rem;">GPAI Provider:</h2>
+        <h2 style="font-size: 0.8rem;">GPAI Provider: <a href="https://www.anthropic.com/" target="_blank">Anthropic</a></h2>
     </header>
 
     <section>
         <h2>Metadata</h2>
         <p>
+            <strong>Model URL:</strong> <a href="https://www.anthropic.com/claude/sonnet" target="_blank">https://www.anthropic.com/claude/sonnet</a><br/>
             <strong>When was this model published?</strong> 2025-09-29<br/>
-            <strong>Is this a new or a fine-tuned?</strong> New model<br/>
-            <strong>When was the Public Summary last updated?</strong> <br/>
-            <strong>When did we evaluate the Public Summary?</strong> <br/>
+            <strong>Is this a new or a fine-tuned model?</strong> New model<br/>
+            
+            <span style="color: red;">We could not find any public summary document for this model</span>
+            
         </p>
     </section>
     <section>        
         <h2>Results of Evaluation</h2>
-        <table id="evaluations" class="table-mobile">
+        <table id="evaluations" class="table-mobile" style="table-layout: fixed;">
             <thead>
                 <tr>
                     <th>Claude Sonnet 4.5</th>
@@ -101,7 +106,7 @@ td {
             <tbody>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Document</td>
+                    <td class="name-cell" style="border: none;">Document</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -122,7 +127,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">General information</td>
+                    <td class="name-cell" style="border: none;">General information</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -143,7 +148,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Public Data Sources</td>
+                    <td class="name-cell" style="border: none;">Public Data Sources</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -164,7 +169,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Private Data Sources</td>
+                    <td class="name-cell" style="border: none;">Private Data Sources</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -185,7 +190,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Scraped/Crawled Data</td>
+                    <td class="name-cell" style="border: none;">Scraped/Crawled Data</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -206,7 +211,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">User Data</td>
+                    <td class="name-cell" style="border: none;">User Data</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -227,7 +232,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Synthetic/Other Data</td>
+                    <td class="name-cell" style="border: none;">Synthetic/Other Data</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -248,7 +253,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Data Processing</td>
+                    <td class="name-cell" style="border: none;">Data Processing</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -269,7 +274,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Sum</td>
+                    <td class="name-cell" style="border: none;">Sum</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -290,24 +295,19 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
                     <td class="outline data-cell" style="text-align: center;"><strong>N/A</strong></td><td class="outline data-cell" style="text-align: center;"><strong>N/A</strong></td>
                 </tr>
             </tbody>
         </table>
     </section>
-    <section id="notes">
-        <h2>Evaluation Notes</h2>
-        
-        <p style="color: #993333;">Evaluation notes are currently unavailable, and will be provided shortly.</p>
-        
-    </section>
+    
 
     </article>
   </main>

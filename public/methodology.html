@@ -34,11 +34,11 @@ body {
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
     <ul id="main-menu" class="menu">
-      <li><a href="index">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li><a href="detailed-overview">Analysis</a></li>
       <li><a href="methodology">Methodology</a></li>
       <li><a href="recommendations">Recommendations</a></li>
-      <li><a href="about">Contact</a></li>
+      <li style="margin-right: 5px;"><a href="about">Contact</a></li>
     </ul>
   </nav>
   <main class="container">
@@ -67,19 +67,28 @@ body {
         well-defined as a quality dimension in literature, as a broad measure of
         whether the provided information is sufficient to take meaningful
         actions and ensure accountability.</p>
-        <span style="display: flex; justify-content: center; align-content: center;"><img src="static/example-radar.png" style="max-height: 400px;  margin:auto; border: 1px solid darkgray; margin-bottom: 5px;"></span>
+
         <p>To assess <em>Transparency</em>, we identified 6 dimensions: <em>Clarity</em>,
         <em>Completeness</em>, <em>Consistency</em>, and <em>Correctness</em>, and for <em>Usefulness</em> we identified <em>Accessibility</em> and
         <em>Comprehension</em>. We then developed 242 <em>metrics</em> as specific questions or criteria that evaluate each field in each section of the public summary template. Since the public summary is structured such that each section has different implications for stakeholders, e.g. some may be interested only in Section 2.2 or Section 3, we evaluate each section using these metrics and then aggregate their scores to get the overall quality.</p>
-        <p>Using our framework, a <em>‘high-quality’</em> public summary is described as a document that
+        <p>Using our framework, a <em>'high-quality'</em> public summary is described as a document that
         provides information in a clear, structured, accurate, and consistent
         manner (<em>transparency</em>) such that it allows relevant stakeholders
         to understand the training process and to take relevant actions where
         necessary (<em>usefulness</em>). Public summaries that do not meet these
-        requirements are considered as <em>‘low-quality’</em>, and are
+        requirements are considered as <em>`low-quality'</em>, and are
         potentially in breach of the template and the corresponding Article
         53(1)(d) obligations.</p>
         <p>Complete details of our methodology and its use in assessments is provided in the article linked above.</p>
+    </section>
+
+    <section>
+        <h2>Website Development</h2>
+        <p>
+            We were inspired by previous approaches which analysed GPAI models and developed a website to share their assessments, in particular the
+            <a href="https://osai-index.eu/">Open Source AI Index (OSAI)</a> and its predecessor <a href="https://opening-up-chatgpt.github.io/">Opening up ChatGPT</a> (see the 
+            <span class="link-icon">🔗</span><a href="https://dl.acm.org/doi/10.1145/3630106.3659005" target="_blank">FAccT'24 paper</a>).
+        </p>
     </section>
 
 

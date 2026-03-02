@@ -16,22 +16,25 @@ article {
     font-size: 0.8rem;
 }
 #evaluations {
-    font-size: 0.5rem;
-    border: 1px solid darkgray;
+    font-size: 0.7rem;
 }
+#evaluations .grade.na { background-color:darkgray; }
 th {
     text-align: center;
-    border-left: 1px solid darkgray;
-    border-right: 1px solid darkgray;
-}
-td {
-    border-left: 1px solid darkgray;
-    border-right: 1px solid darkgray;
+    font-size: 0.7rem;
 }
 td {
     width: 25px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
+.outline {
+    font-size: 0.7rem;
+}
+span.openness { display:inline-block;
+padding:1px 5px; color:#ffffff }
+span.open { background-color:#3e9b74; }
+span.partial { background-color:#dd9f1c; }
+span.closed { background-color:#ca6014; }
 
     </style>
     <link href="static/favicon.png" rel="icon" type="image/x-icon"/>
@@ -52,11 +55,11 @@ td {
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
     <ul id="main-menu" class="menu">
-      <li><a href="index">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li><a href="detailed-overview">Analysis</a></li>
       <li><a href="methodology">Methodology</a></li>
       <li><a href="recommendations">Recommendations</a></li>
-      <li><a href="about">Contact</a></li>
+      <li style="margin-right: 5px;"><a href="about">Contact</a></li>
     </ul>
   </nav>
   <main class="container">
@@ -64,21 +67,25 @@ td {
       
     <header>
         <h1>Phi-4</h1>
-        <h2 style="font-size: 0.8rem;">GPAI Provider:</h2>
+        <h2 style="font-size: 0.8rem;">GPAI Provider: <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft</a></h2>
     </header>
 
     <section>
         <h2>Metadata</h2>
         <p>
+            <strong>Model URL:</strong> <a href="https://huggingface.co/microsoft/phi-4" target="_blank">https://huggingface.co/microsoft/phi-4</a><br/>
             <strong>When was this model published?</strong> 2024-12-12<br/>
-            <strong>Is this a new or a fine-tuned?</strong> New model<br/>
+            <strong>Is this a new or a fine-tuned model?</strong> New model<br/>
+            
             <strong>When was the Public Summary last updated?</strong> 2025-11-24<br/>
             <strong>When did we evaluate the Public Summary?</strong> 2026-01-12<br/>
+            <strong>Where did we find the Public Summary?</strong> We found <a href="https://huggingface.co/microsoft/phi-4/blob/main/data_summary_card.md" target="_blank">this document</a> linked on <a href="https://huggingface.co/microsoft/phi-4" target="_blank">this page</a>. An archived version can be found <a href="./static/Phi 4 -- 2026_02_05.pdf">here</a>.
+            
         </p>
     </section>
     <section>        
         <h2>Results of Evaluation</h2>
-        <table id="evaluations" class="table-mobile">
+        <table id="evaluations" class="table-mobile" style="table-layout: fixed;">
             <thead>
                 <tr>
                     <th>Phi-4</th>
@@ -101,7 +108,7 @@ td {
             <tbody>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Document</td>
+                    <td class="name-cell" style="border: none;">Document</td>
                     
                     <td class="open grade data-cell">81.82</td>
                     
@@ -122,7 +129,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">General information</td>
+                    <td class="name-cell" style="border: none;">General information</td>
                     
                     <td class="partial grade data-cell">50.0</td>
                     
@@ -143,7 +150,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Public Data Sources</td>
+                    <td class="name-cell" style="border: none;">Public Data Sources</td>
                     
                     <td class="closed grade data-cell">0.0</td>
                     
@@ -164,7 +171,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Private Data Sources</td>
+                    <td class="name-cell" style="border: none;">Private Data Sources</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -185,7 +192,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Scraped/Crawled Data</td>
+                    <td class="name-cell" style="border: none;">Scraped/Crawled Data</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -206,7 +213,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">User Data</td>
+                    <td class="name-cell" style="border: none;">User Data</td>
                     
                     <td class="na grade data-cell">N/A</td>
                     
@@ -227,7 +234,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Synthetic/Other Data</td>
+                    <td class="name-cell" style="border: none;">Synthetic/Other Data</td>
                     
                     <td class="closed grade data-cell">0.0</td>
                     
@@ -248,7 +255,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Data Processing</td>
+                    <td class="name-cell" style="border: none;">Data Processing</td>
                     
                     <td class="open grade data-cell">100.0</td>
                     
@@ -269,7 +276,7 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td class="name-cell">Sum</td>
+                    <td class="name-cell" style="border: none;">Sum</td>
                     
                     <td class="closed grade data-cell">30.23</td>
                     
@@ -290,13 +297,13 @@ td {
                 </tr>
                 
                 <tr class="row-a">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
+                    <td style="border: none;"></td>
                     <td class="outline data-cell" style="text-align: center;"><strong>D</strong></td><td class="outline data-cell" style="text-align: center;"><strong>F</strong></td>
                 </tr>
             </tbody>
@@ -305,7 +312,7 @@ td {
     <section id="notes">
         <h2>Evaluation Notes</h2>
         
-        <p style="color: #993333;">Evaluation notes are currently unavailable, and will be provided shortly.</p>
+        <p>We did not find an explicitly published summary for Microsoft's Phi-4 model, but found a file <a href="https://huggingface.co/microsoft/phi-4/blob/main/data_summary_card.md" target="_blank">in its repository on HuggingFace</a> called "data_summary_card.md", whose structure closely matched that of the template. The title used in the file was "Data Summary", which was also title used by HuggingFace in its SmolLM public summary. We are uncertain as to whether this represents an industry practice of co-opting of the formal title of "public summary of training content" present in the template with a broader and vague title that could be confused with other data-related documentation also provided with GPAI models. We opted to assess this model regardless based on the assumption of stakeholders viewing the document as fulfilling the template requirements, as explained earlier.<br><br>The assessment showed that fields provided in the document are filled in to some extent, but that the document itself is quite sparse and does not provide many details and also had sections missing. We further found that section numbers and questions had a significant mismatch from what was provided in the template. The document also suffered from subjective non-relevant statements, such as question 2.3.1 on whether public data was used to train the model being answered with "<i>Microsoft follows all relevant laws and regulations pertaining to personal information</i>" &mdash; which is neither relevant nor clear. We also found the document did not provide required information significantly, for example subsequent parts that enquire about the source and uses of personal data (2.4 User data in template) were found completely missing. Our assessment reflects these systematic major issues in the outcomes where the document scored <span class="openness closed">33.30%</span> with a Grade <strong>D</strong> for <i>transparency</i>, and <span class="openness closed">24.54%</span> with a Grade <strong>F</strong> for <i>usefulness</i>, which is the lowest score amongst all assessed summaries published before and during our initial research.</p>
         
     </section>
 

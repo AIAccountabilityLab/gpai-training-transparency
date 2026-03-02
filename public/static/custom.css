@@ -69,24 +69,22 @@ nav > ul > li > a {
 #evaluations .grade {
   color: #FFF;
 }
-#evaluations td>span.grade { 
-  display: inline-flex;
+#evaluations td.grade { 
   align-items: center;
   justify-content: center;
-  width: 2em;
-  height: 2em;
   color: white;
-  border-radius: 50%;
   font-weight: bold;
   font-size: 0.75rem;
   text-align: center;
   line-height: 1;
   margin: 0.25em;
+  border-right: 1px solid white;
+  max-width: 50px;
 }
 #evaluations .grade.closed { background-color:#ca6014;}
 #evaluations .grade.open { background-color:#3e9b74;}
 #evaluations .grade.partial { background-color:#dd9f1c;}
-#evaluations .grade.na { background-color:#D72638; }
+#evaluations .grade.na { background-color:#a5410f; }
 
 thead {
   position: -webkit-sticky;
@@ -97,6 +95,7 @@ thead {
 }
 
 footer {
+  max-width: 100vw !important;
   width: 100%;
   text-align: center;
   background: #0E1327;
