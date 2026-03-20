@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}Assessment of {{ page_data.model_name }}{% endblock TITLE %}
+{% block ROOTPATH %}../../{% endblock %}
+
+{% block CUSTOM_CSS %}
+article {
+    max-width: 90vw;
+    font-size: 0.8rem;
+}
+th {
+    text-align: center;
+}
+#evaluations .grade.na { background-color:darkgray; }
+
+span.openness { display:inline-block;
+padding:1px 5px; color:#ffffff }
+span.open { background-color:#3e9b74; }
+span.partial { background-color:#dd9f1c; }
+span.closed { background-color:#ca6014; }
+
+#evaluations {
+    border-collapse: separate;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.5rem;
+    border: 1px solid #EEE;
+}
+
+colgroup col:first-child {
+    width: auto;
+}
+
+colgroup col:not(:first-child) {
+    width: calc((100% - auto) / 4);
+}
+th { 
+    border: none; 
+    white-space: nowrap;
+}
+td {
+    white-space: nowrap;
+}
+tr:not(:last-child) td:nth-child(1),th:nth-child(1) {
+     border-right: 1px solid #EEE;
+}
+tr:not(:last-child) td:nth-child(5),th:nth-child(5) {
+     border-right: 1px solid #EEE;
+}
+tr:not(:last-child) td:nth-child(7),th:nth-child(7) {
+     border-right: 1px solid #EEE;
+}
+
+{% endblock CUSTOM_CSS %}
+
+{% block MAIN %}
+    <header>
+        <h1>{{ page_data.model_name }}</h1>
+        <h2 style="font-size: 0.8rem;">GPAI Provider: <a href="{{ page_data.org_link}}" target="_blank">{{ page_data.org_name }}</a></h2>
+    </header>
+
+    <section>
+        <h2>Metadata</h2>
+        <p>
+            <strong>Model URL:</strong> <a href="{{ page_data.model_link }}" target="_blank">{{ page_data.model_link }}</a><br/>
+            <strong>When was this model published?</strong> {{ page_data.model_publication_date }}<br/>
+            <strong>Is this a new or a fine-tuned model?</strong> {{ page_data.model_category }}<br/>
+            {% if page_data.summary_link %}
+            <strong>When was the Public Summary last updated?</strong> {{ page_data.summary_last_update }}<br/>
+            <strong>When did we evaluate the Public Summary?</strong> {{ page_data.eval_date }}{% if page_data.previous_versions %}<small> (see <a href="#previous-versions">previous versions here</a>)</small>{% endif %}<br/>
+            <strong>Where did we find the Public Summary?</strong> We found <a href="{{page_data.public_summary_link}}" target="_blank">this document</a> linked on <a href="{{page_data.public_summary_location}}" target="_blank">this page</a>. An archived version can be found <a href="{{page_data.summary_archive}}">here</a>.
+            {% else %}
+            <span style="color: red;">We could not find any public summary document for this model</span>
+            {% endif %}
+        </p>
+    </section>
+    <section>        
+        <h2>Results of Evaluation</h2>
+        <table id="evaluations" class="table-mobile" style="table-layout: fixed;">
+            <colgroup>
+                <col />
+                <col span="4" />
+                <col span="2" />
+                <col span="2" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th colspan="4" style="border-right: 1px solid #EEE;">Transparency</th>
+                    <th colspan="2" style="border-right: 1px solid #EEE;">Usefulness</th>
+                    <th colspan="2">General</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Clarity</th>
+                    <th>Completeness</th>
+                    <th>Consistency</th>
+                    <th>Correctness</th>
+                    <th>Accessibility</th>
+                    <th>Comprehension</th>
+                    <th><strong><i>Transparency</i></strong></th>
+                    <th><strong><i>Usefulness</i></strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for section in page_data.colored_scores %}
+                <tr class="row-a">
+                    <td class="name-cell">{{ section.name }}</td>
+                    {% for score in section.scores %}
+                    <td class="{{ score.col }} grade data-cell">{{ score.val }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                <tr class="row-a row-last">
+                    <td>Grades</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="outline data-cell" style="text-align: center;"><strong>{{ page_data.t_grade }}</strong></td><td class="outline data-cell" style="text-align: center;"><strong>{{ page_data.u_grade }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    {% if page_data.summary_link %}<section id="notes">
+        <h2>Evaluation Notes</h2>
+        <blockquote>
+            <small>If you update your public summary, please <a href="{{self.ROOTPATH()}}about">let us know</a> so that we can update the evaluation and scores. We also welcome suggestions on improvements to this page, e.g. see <a href="../../methodology#FAQ">FAQ section</a>.</small>
+        </blockquote>
+        {% if not page_data.general_notes %}
+        <p style="color: #993333;">Evaluation notes are currently unavailable, and will be provided shortly.</p>
+        {% else %}
+        <p>{{ page_data.general_notes|safe }}</p>
+        {% endif %}
+
+        <p>
+            <strong>Suggested Improvements</strong><br/>
+            The following are the suggested improvements based on using our <a href="../../methodology">our methodology</a> where the public summary had issues related to the specified metric. The severity represents the extent of the issue, with low indicating aspects that could be fixable, and high representing missing information or requiring major changes.</p>
+        </p>
+        <ul>{% for section, improvements in page_data.improvements.items() %}
+            <li><strong>{{section}}</strong>
+                <ul>{% for item in improvements %}
+                    <li>{{item.metric}} {{item.message}} <sup><span class="{{item.col}}" style="padding: 2px; color: white; font-size: 0.5rem;">{{item.severity}}</sup></li>
+                {% endfor %}</ul>
+            </li>
+        {% endfor %}</ul>
+
+    </section>{% endif %}
+
+    {% if page_data.previous_versions %}<section id="previous-versions">
+        <h2>Previous Versions</h2>
+        <ul>
+            <li><a href="version-{{page_data.eval_date}}">{{ page_data.eval_date }}</a> (current version)</li>
+            {% for version in page_data.previous_versions %}
+            <li><a href="version-{{version}}">{{ version }}</a></li>
+        {% endfor %}</ul>
+    </section>{% endif %}
+{% endblock MAIN %}
