@@ -68,7 +68,7 @@ tr:not(:last-child) td:nth-child(7),th:nth-child(7) {
             {% if page_data.summary_link %}
             <strong>When was the Public Summary last updated?</strong> {{ page_data.summary_last_update }}<br/>
             <strong>When did we evaluate the Public Summary?</strong> {{ page_data.eval_date }}{% if page_data.previous_versions %}<small> (see <a href="#previous-versions">previous versions here</a>)</small>{% endif %}<br/>
-            <strong>Where did we find the Public Summary?</strong> We found <a href="{{page_data.public_summary_link}}" target="_blank">this document</a> linked on <a href="{{page_data.public_summary_location}}" target="_blank">this page</a>. An archived version can be found <a href="{{page_data.summary_archive}}">here</a>.
+            <strong>Where did we find the Public Summary?</strong> We found <a href="{{page_data.public_summary_link}}" target="_blank">this document</a> linked on <a href="{{page_data.public_summary_location}}" target="_blank">this page</a>. An archived version can be found <a href="../../{{page_data.summary_archive}}">here</a>.
             {% else %}
             <span style="color: red;">We could not find any public summary document for this model</span>
             {% endif %}

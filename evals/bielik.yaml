@@ -11,7 +11,7 @@ public_summary_date: "2026-01-01"
 public_summary_location: "https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct"
 model_publication_date: "2025-12-31"
 category: "Fine-tuned model" # New model, fine-tuned model
-archive_file_name: "Bielik 11B v3 EU Public Summary -- 2026_01_12.pdf"
+archive_file_name: "Bielik_3_2026_01_12.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

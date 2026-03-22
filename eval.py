@@ -229,7 +229,7 @@ def calculate():
             'summary_last_update': template_info['public_summary_date'], 
             'summary_link': template_info['public_summary_link'],
             'summary_location': template_info['public_summary_location'], 
-            'summary_archive': './static/'+template_info['archive_file_name'],
+            'summary_archive': 'archive/'+template_info['archive_file_name'],
             'org_name': template_info['organization'],
             'org_link': template_info['org_link'],
             'eval_date': template_info['evaluation_date'],

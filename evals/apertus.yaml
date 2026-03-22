@@ -11,7 +11,7 @@ public_summary_date: "2025-09-01"
 public_summary_location: "https://huggingface.co/swiss-ai/Apertus-70B-2509"
 model_publication_date: "2025-09-02"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "Apertus_EU_Public_Summary -- 2025_11_12.pdf"
+archive_file_name: "Apertus_2025_11_12.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
