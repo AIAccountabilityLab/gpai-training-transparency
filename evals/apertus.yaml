@@ -53,20 +53,12 @@ S2: # General information
   D1: # Clarity
     score: 20
     max_score: 42
-    notes: "Description of types of content can be made more precise, i.e. categories of content such as legal text, social media comments rather than a generic description of 'public text-only data derived mainly from web documents'. \
-     \
-     Our suggestion: specify categories in which the public datasets are actually provided, mentioning that training data primarily consists of educational webpages (from FineWeb-Edu and DCLM-Edu), crawled web-pages filtered for high-quality content (FineWeb-2, FineWeb-HQ, and FineWeb2-HQ), code data (The Stack dedup and StackV2_Edu_Filtered), and mathematical pretraining data (FineMath and MegaMath). \
-     \
-     Mention of training data being fully transparent and reproducible is not strictly necessary given the field. We think this would be better in Additional comments (optional) field. \
-     \
-     Other relevant characteristics of the overall training data: respecting of consent and the removal of toxic content, which should be provided in the assigned field in section 3.1 (consent), 3.2 (toxic content) or 3.3 (optional info)."
+    notes: "Description of types of content can be made more precise, i.e. categories of content such as legal text, social media comments rather than a generic description of 'public text-only data derived mainly from web documents'.<br/><br/>Our suggestion: specify categories in which the public datasets are actually provided, mentioning that training data primarily consists of educational webpages (from FineWeb-Edu and DCLM-Edu), crawled web-pages filtered for high-quality content (FineWeb-2, FineWeb-HQ, and FineWeb2-HQ), code data (The Stack dedup and StackV2_Edu_Filtered), and mathematical pretraining data (FineMath and MegaMath).<br/><br/>Mention of training data being fully transparent and reproducible is not strictly necessary given the field. We think this would be better in Additional comments (optional) field.<br/><br/>Other relevant characteristics of the overall training data: respecting of consent and the removal of toxic content, which should be provided in the assigned field in section 3.1 (consent), 3.2 (toxic content) or 3.3 (optional info)."
 
   D2: # Completeness
     score: 51
     max_score: 62
-    notes: "Description of the linguistic characteristics of the overall training data: Missing info on language and EU languages. \
-     \
-     Our suggestion: given the large number of languages used in pretraining (999+), mention the EU languages covered, e.g. 'text from all EU languages was used in the training of this model', with perhaps a link to the list of language-script pairs or where to find info on languages. This would already provide enough information to writers of a given language to be able to see whether training may have spanned their writing in that language."
+    notes: "Description of the linguistic characteristics of the overall training data: Missing info on language and EU languages.<br/><br/>Our suggestion: given the large number of languages used in pretraining (999+), mention the EU languages covered, e.g. 'text from all EU languages was used in the training of this model', with perhaps a link to the list of language-script pairs or where to find info on languages. This would already provide enough information to writers of a given language to be able to see whether training may have spanned their writing in that language."
 
   D3: # Consistency
     score: 8
@@ -86,9 +78,7 @@ S2: # General information
   D6: # Comprehension
     score: 10
     max_score: 11
-    notes: "Latest date of data acquisition/collection for model training: indicate whether continuous training is employed (see template placeholder text). \
-     \
-     Our suggestion: Even though this is fairly evident given the type of model which Apertus is, it is still handy to include, and is expected by the template. The phrasing 'later date' is also ambiguous with fine-tuning."
+    notes: "Latest date of data acquisition/collection for model training: indicate whether continuous training is employed (see template placeholder text).<br/><br/>Our suggestion: Even though this is fairly evident given the type of model which Apertus is, it is still handy to include, and is expected by the template. The phrasing 'later date' is also ambiguous with fine-tuning."
 
 S3: # Public datasets
   D1: # Clarity

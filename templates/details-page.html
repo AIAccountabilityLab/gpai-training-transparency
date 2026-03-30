@@ -142,7 +142,7 @@ tr:not(:last-child) td:nth-child(7),th:nth-child(7) {
         <ul>{% for section, improvements in page_data.improvements.items() %}
             <li><strong>{{section}}</strong>
                 <ul>{% for item in improvements %}
-                    <li>{{item.metric}} {{item.message}} <sup><span class="{{item.col}}" style="padding: 2px; color: white; font-size: 0.5rem;">{{item.severity}}</sup></li>
+                    <li>{{item.metric}} {{item.message | safe}} <sup><span class="{{item.col}}" style="padding: 2px; color: white; font-size: 0.5rem;">{{item.severity}}</sup></li>
                 {% endfor %}</ul>
             </li>
         {% endfor %}</ul>
