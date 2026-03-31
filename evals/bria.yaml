@@ -5,13 +5,15 @@ model_name: "Bria 3.2"
 model_link: "https://huggingface.co/briaai/BRIA-3.2"
 organization: "Bria AI"
 org_link: "https://bria.ai/"
-evaluation_date: "2026-01-12"
+evaluation_date: "2026-03-31"
 public_summary_link: "https://drive.google.com/file/d/13BhHQhd7vcDArPmpBrl_b2FpdBqkYU4n/view"
 public_summary_date: "2026-01-06"
 public_summary_location: "https://bria.ai/security-and-compliance"
 model_publication_date: "2025-06-10"
 category: "New model" # New model, fine-tuned model
 archive_file_name: "Bria_32_2026_01_12.pdf"
+previous_versions:
+  - "2026-01-12"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

@@ -5,13 +5,15 @@ model_name: "SmolLM3-3B"
 model_link: "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
 organization: "HuggingFace"
 org_link: "https://huggingface.co/HuggingFaceTB"
-evaluation_date: "2026-01-12"
+evaluation_date: "2026-03-31"
 public_summary_link: "https://huggingface.co/spaces/hfmlsoc/smollm3-eu-data-transparency"
 public_summary_date: "2025-07-25"
 public_summary_location: "https://huggingface.co/hfmlsoc/spaces"
 model_publication_date: "2025-07-08"
 category: "Fine-tuned model" # New model, fine-tuned model
 archive_file_name: "SmolLM_33B_2025_11_12.pdf"
+previous_versions:
+  - "2026-01-12"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
@@ -20,7 +22,7 @@ S1: # Document-level requirements
   D1: # Clarity
     score: 7.5
     max_score: 11
-    notes: ""
+    notes: "Document should have the correct structure, and be in a well-defined, structured, and interoperable format.<br/><br/>Document should clearly indicate whether it is the latest version or if it is outdated and a replacement is made available.<br/><br/>Document should provide link to all versions of the document."
 
   D2: # Completeness
     score: 4
@@ -30,22 +32,22 @@ S1: # Document-level requirements
   D3: # Consistency
     score: 5.5
     max_score: 8
-    notes: ""
+    notes: "Document should be consistent across versions. Each document version should have a unique version number."
 
   D4: # Correctness
     score: 3
     max_score: 6
-    notes: ""
+    notes: "Document should have assured integrity and provide a link to the authoritative source of the document. The date of last update should be correct and accurate."
 
   D5: # Accessibility
     score: 8.5
     max_score: 13
-    notes: ""
+    notes: "Document must be easy to find, support sharing and exporting, and be provided in the same context as the model."
 
   D6: # Comprehension
     score: 6
     max_score: 12
-    notes: ""
+    notes: "Document should clearly indicate changes from previous version, or otherwise where notice of updates or changes will be provided. Links to previous versions should be accessible for intended stakeholders."
 
 S2: # General information
   D1: # Clarity
