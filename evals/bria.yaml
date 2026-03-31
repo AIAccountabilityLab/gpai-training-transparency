@@ -20,12 +20,12 @@ S1: # Document-level requirements
   D1: # Clarity
     score: 9
     max_score: 11
-    notes: ""
+    notes: "Document should clearly indicate whether it is the latest version or if it is outdated and a replacement is made available, as well as provide a link to all versions of the document."
 
   D2: # Completeness
     score: 1
     max_score: 4
-    notes: ""
+    notes: "Is a version for the document provided?"
 
   D3: # Consistency
     score: 7
@@ -35,28 +35,28 @@ S1: # Document-level requirements
   D4: # Correctness
     score: 2
     max_score: 5
-    notes: ""
+    notes: "Document should have assured integrity, provide an authoritative source of the document, and have a correct date format."
 
   D5: # Accessibility
     score: 7
     max_score: 10
-    notes: ""
+    notes: "Document should be provided in the same context as the model."
 
   D6: # Comprehension
     score: 6
     max_score: 9
-    notes: ""
+    notes: "Document should clearly indicate changes from previous version and where notice of updates or changes will be provided."
 
 S2: # General information
   D1: # Clarity
     score: 32.5
     max_score: 40
-    notes: ""
+    notes: "Contact details should refer to a non-generic contact point, and date (of latest data acquisition) should have the proper format."
 
   D2: # Completeness
     score: 47
     max_score: 78
-    notes: ""
+    notes: "No contact details provided for provider, no links to additional publicly available documentation.<br/><br/>Languages covered by training data, as well as national, regional, and demographic specificities of training data not described."
 
   D3: # Consistency
     score: 8
@@ -66,7 +66,7 @@ S2: # General information
   D4: # Correctness
     score: 15
     max_score: 21
-    notes: ""
+    notes: "Provided information relating to the linguistic characteristics of the overall training data is not accurate."
 
   D5: # Accessibility
     score: 0
@@ -76,7 +76,7 @@ S2: # General information
   D6: # Comprehension
     score: 13
     max_score: 14
-    notes: ""
+    notes: "No indication of whether the model is continuously trained on new or dynamic data."
 
 S3: # Public datasets
   D1: # Clarity
