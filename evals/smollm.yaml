@@ -53,12 +53,12 @@ S2: # General information
   D1: # Clarity
     score: 21
     max_score: 40
-    notes: ""
+    notes: "Contact details refer to a generic contact point. Description of types of content contains some description pertaining to goals rather than types.<br/><br/>Date of latest acquisition/collection for model training should have the proper format. Not all included languages are provided as a list."
 
   D2: # Completeness
     score: 54
     max_score: 65
-    notes: ""
+    notes: "Model dependencies should include SmolLM3-3B-Base. Date of placement on the Union market should be indicated."
 
   D3: # Consistency
     score: 8
@@ -68,7 +68,7 @@ S2: # General information
   D4: # Correctness
     score: 17
     max_score: 23
-    notes: ""
+    notes: "Model dependencies should include SmolLM3-3B-Base. Date of placement on the Union market should be indicated."
 
   D5: # Accessibility
     score: 0
@@ -78,13 +78,13 @@ S2: # General information
   D6: # Comprehension
     score: 10
     max_score: 11
-    notes: ""
+    notes: "No indication of whether the model is continuously trained on new or dynamic data after the date provided."
 
 S3: # Public datasets
   D1: # Clarity
     score: 44
     max_score: 52
-    notes: ""
+    notes: "General description of other publicly available datasets contains some superfluous information."
 
   D2: # Completeness
     score: 108
@@ -208,12 +208,12 @@ S7: # Synthetic & other
   D1: # Clarity
     score: 25
     max_score: 37
-    notes: ""
+    notes: "No information about other AI models used to generate synthetic data to train the model to which this Summary applies."
 
   D2: # Completeness
     score: 19
     max_score: 31
-    notes: ""
+    notes: "No information about other AI models used to generate synthetic data to train the model to which this Summary applies."
 
   D3: # Consistency
     score: 6
@@ -223,7 +223,7 @@ S7: # Synthetic & other
   D4: # Correctness
     score: 13
     max_score: 31
-    notes: ""
+    notes: "Slight inconsistency in general-purpose AI model(s) used to generate the synthetic data if available on the market. No information about other AI models used to generate synthetic data to train the model to which this Summary applies."
 
   D5: # Accessibility
     score: 0
@@ -233,7 +233,7 @@ S7: # Synthetic & other
   D6: # Comprehension
     score: 0
     max_score: 12
-    notes: ""
+    notes: "No information about other AI models used to generate synthetic data to train the model to which this Summary applies."
 
 S8: # Data processing
   D1: # Clarity
@@ -244,7 +244,7 @@ S8: # Data processing
   D2: # Completeness
     score: 15
     max_score: 18
-    notes: ""
+    notes: "Signatory to the Code of Practice field not filled in."
 
   D3: # Consistency
     score: 3
@@ -254,7 +254,7 @@ S8: # Data processing
   D4: # Correctness
     score: 33
     max_score: 36
-    notes: ""
+    notes: "Signatory to the Code of Practice field not filled in."
 
   D5: # Accessibility
     score: 15
