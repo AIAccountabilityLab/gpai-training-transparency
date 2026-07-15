@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}{{post.title}}{% endblock TITLE %}
+{% block ROOTPATH %}../../{% endblock %}
+
+{% block CUSTOM_CSS %}
+body {
+    font-size: 0.75rem;
+}
+ul li {
+    list-style: none;
+}
+.post {
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+{% endblock CUSTOM_CSS %}
+
+{% block MAIN %}
+    <header style="border-bottom: 2px solid black;">
+        <h1>{{post.title}}</h1>
+        <p><small><i>{{ post.date }} | {{ post.description }}</i></small></p>
+    </header>
+
+    <section id="content">
+        {{ post.content|safe }}
+    </section>
+{% endblock MAIN %}

@@ -15,15 +15,25 @@ def main():
     parser.add_argument('-R', '--recommendations', default=False, action='store_true', help="generate recommendations page")
     parser.add_argument('-M', '--methodology', default=False, action='store_true', help="generate methodology page")
     parser.add_argument('-E', '--evaluations', default=False, action='store_true', help="generate methodology page")
+    parser.add_argument('-B', '--blog', default=False, action='store_true', help="generate blog")
     parser.add_argument('-A', '--all', default=False, action='store_true', help="generate all pages")
     args = parser.parse_args()
+
+    import sys
+    if len(sys.argv) < 2:
+        print("Missing options needed to execute commands. See usage.")
+        parser.print_help()
+        sys.exit(0)
 
     if args.debug:
         log.setDebug()
         log.DEBUG('Logging set to DEBUG')
 
     if args.all:
-        args.home = args.overview = args.contact = args.recommendations = args.methodology = args.evaluations = True
+        args.home = args.overview = args.contact \
+            = args.recommendations = args.methodology \
+            = args.evaluations = args.blog \
+            = True
 
     if any((args.home, args.overview, args.evaluations)):
         data = calculate()
@@ -42,6 +52,8 @@ def main():
     if args.evaluations:
         for summary in data:
             writer.evaluation(data[summary])
+    if args.blog:
+        writer.blog()
 
 
 if __name__ == "__main__":

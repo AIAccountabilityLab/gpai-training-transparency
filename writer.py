@@ -68,3 +68,17 @@ def recommendations():
     with open(f'./{OUT_DIR}/recommendations.html', 'w') as fd:
         fd.write(template.render())
     log.DEBUG('wrote recommendations page')
+
+
+def blog():
+    blogdir = './blog'
+    from blog import get_posts
+    posts = get_posts()
+    template = env.get_template("blog.html")
+    with open(f'./{OUT_DIR}/blog/index.html', 'w') as fd:
+        fd.write(template.render(posts=posts))
+    template = env.get_template('blogpost.html')
+    for post in posts:
+        with open(f'./{OUT_DIR}/blog/{post["url"]}.html', 'w') as fd:
+            fd.write(template.render(post=post))
+    log.DEBUG('wrote blog')

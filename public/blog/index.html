@@ -1,23 +1,28 @@
-{% macro citation(style=True, venue='facct') %}
-<div style="font-size: 0.7rem; background: #FFDDDD; margin: 0px; padding: 0px; padding-top: 2px; margin-left: 5px solid black; padding-left: 5px; margin-bottom: 5px;">
-  <p>Cite as: Blankvoort, D. A. H., Pandit, H. J., & Gahntz, M. (2026). <strong><i>Quality Assessment of Public Summary of Training Content for GPAI models required by AI Act Article 53(1)(d)</i></strong> (preprint). 9th ACM Conference on Fairness, Accountability, and Transparency (FAccT), Montreal, Canada. Zenodo. <a href="https://doi.org/10.5281/zenodo.18803975">DOI:10.5281/zenodo.18803975</a></p>
-</div>
-{% endmacro %}
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block TITLE %}{% endblock TITLE %}</title>
+    <title>Blog</title>
     <meta name="color-scheme" content="light only">
-    <!-- <link rel="stylesheet" href="{% block ROOTPATH %}./{% endblock %}static/pico/pico.min.css"> -->
-    <link rel="stylesheet" href="{{ self.ROOTPATH() }}static/pico/pico.classless.violet.min.css">
-    <link rel="stylesheet" href="{{ self.ROOTPATH() }}static/custom.css">
-    <!-- <link href="{{ self.ROOTPATH() }}static/styles.css" rel="stylesheet"/> -->
+    <!-- <link rel="stylesheet" href="../../static/pico/pico.min.css"> -->
+    <link rel="stylesheet" href="../../static/pico/pico.classless.violet.min.css">
+    <link rel="stylesheet" href="../../static/custom.css">
+    <!-- <link href="../../static/styles.css" rel="stylesheet"/> -->
     <style>
-      {% block CUSTOM_CSS %}{% endblock CUSTOM_CSS %}
+body {
+    font-size: 0.75rem;
+}
+ul li {
+    list-style: none;
+}
+.post {
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
     </style>
-    <link href="{{ self.ROOTPATH() }}static/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="../../static/favicon.png" rel="icon" type="image/x-icon"/>
   </head>
 <body>
   <nav>
@@ -35,17 +40,40 @@
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
     <ul id="main-menu" class="menu">
-      <li><a href="{{ self.ROOTPATH() }}">Home</a></li>
-      <li><a href="{{ self.ROOTPATH() }}detailed-overview">Analysis</a></li>
-      <li><a href="{{ self.ROOTPATH() }}methodology">Methodology</a></li>
-      <li><a href="{{ self.ROOTPATH() }}recommendations">Recommendations</a></li>
-      <li><a href="{{ self.ROOTPATH() }}blog">Blog</a></li>
+      <li><a href="../../">Home</a></li>
+      <li><a href="../../detailed-overview">Analysis</a></li>
+      <li><a href="../../methodology">Methodology</a></li>
+      <li><a href="../../recommendations">Recommendations</a></li>
+      <li><a href="../../blog">Blog</a></li>
       <li style="margin-right: 5px;"><a href="about">Contact</a></li>
     </ul>
   </nav>
   <main class="container">
     <article>
-      {% block MAIN %}{% endblock MAIN %}
+    <header>
+        <h1>Blog</h1>
+    </header>
+
+    <section id="posts">
+        <div class="post">
+            <p style="margin-bottom: 0px;">
+                <a href="003-gpt5"><strong>GPT 5.5 public summary evaluation</strong></a> <br/>
+                <small><i>2026-07-15 | We evaluated OpenAI&#39;s GPT 5.5 public summary and scored it C+ for Transparency and D+ for Usefulness</i></small>
+            </p>
+        </div>
+        <div class="post">
+            <p style="margin-bottom: 0px;">
+                <a href="002-provider-updates"><strong>Updates from Provider!</strong></a> <br/>
+                <small><i>2026-07-10 | We have updates from Swiss AI Initiative (Apertus) and HuggingFace (SmolLM)</i></small>
+            </p>
+        </div>
+        <div class="post">
+            <p style="margin-bottom: 0px;">
+                <a href="001-blog-start"><strong>We have a blog!</strong></a> <br/>
+                <small><i>2026-07-01 | We are starting a blog to share regular updates</i></small>
+            </p>
+        </div>
+    </section>
     </article>
   </main>
   <footer>
@@ -64,6 +92,5 @@
     button.setAttribute('aria-expanded', isOpen);
   });
 </script>
-{% block CUSTOM_JS %}{% endblock CUSTOM_JS %}
 </body>
 </html>
