@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "GPT-5"
-model_link: "https://chatgpt.com/"
-organization: "OpenAI"
-org_link: "https://openai.com/"
+model_name: "Claude Fable 5"
+model_link: "https://www.anthropic.com/claude/fable"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
-public_summary_link: ""
+public_summary_link: "" 
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2025-08-07"
+model_publication_date: "2026-06-09"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 
