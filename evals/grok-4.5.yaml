@@ -11,7 +11,7 @@ public_summary_date: "2026-07-08"
 public_summary_location: "https://media.x.ai"
 model_publication_date: "2026-07-09"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "public-summary-of-training-content-for-grok-4.5_8jul2026.docx-fc25014a.pdf"
+archive_file_name: "Grok-45_2026_07_17.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
