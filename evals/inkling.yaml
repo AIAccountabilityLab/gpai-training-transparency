@@ -18,250 +18,250 @@ archive_file_name: "Inkling_2026_07_17.pdf"
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 9
+    max_score: 11
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 4
+    max_score: 4
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 7
+    max_score: 7
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 3.5
+    max_score: 5
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 7
+    max_score: 10
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 6
+    max_score: 9
     notes: ""
 
 S2: # General information
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 17
+    max_score: 37
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 60
+    max_score: 78
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 8
+    max_score: 8
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 13
+    max_score: 13
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 5
+    max_score: 5
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 14
+    max_score: 14
     notes: ""
 
 S3: # Public datasets
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 32
+    max_score: 92
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 66
+    max_score: 140
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 23
+    max_score: 23
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 20
+    max_score: 20
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 20
+    max_score: 20
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 16
+    max_score: 16
     notes: ""
 
 S4: # Private datasets
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 32
+    max_score: 32
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 72
+    max_score: 88
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 24
+    max_score: 24
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 0
+    max_score: 0
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 16
+    max_score: 16
     notes: ""
 
 S5: # Scraped/crawled data
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 77
+    max_score: 114
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 82
+    max_score: 158
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 46
+    max_score: 93
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 0
+    max_score: 25
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 33
+    max_score: 58
     notes: ""
 
 S6: # User data
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 0
+    max_score: 0
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 8
+    max_score: 8
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 8
+    max_score: 8
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 0
+    max_score: 0
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 0
+    max_score: 0
     notes: ""
 
 S7: # Synthetic & other
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 29
+    max_score: 65
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 35
+    max_score: 47
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 6
+    max_score: 6
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 35
+    max_score: 47
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 17
+    max_score: 17
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 0
+    max_score: 12
     notes: ""
 
 S8: # Data processing
   D1: # Clarity
-    score: 
-    max_score: 
+    score: 18
+    max_score: 18
     notes: ""
 
   D2: # Completeness
-    score: 
-    max_score: 
+    score: 18
+    max_score: 18
     notes: ""
 
   D3: # Consistency
-    score: 
-    max_score: 
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
-    score: 
-    max_score: 
+    score: 36
+    max_score: 36
     notes: ""
 
   D5: # Accessibility
-    score: 
-    max_score: 
+    score: 15
+    max_score: 15
     notes: ""
 
   D6: # Comprehension
-    score: 
-    max_score: 
+    score: 51
+    max_score: 69
     notes: ""
 
 
