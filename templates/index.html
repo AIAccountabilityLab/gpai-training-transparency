@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}GPAI Training Transparency{% endblock TITLE %}
+
+{% block CUSTOM_CSS %}
+    #evaluations {
+      font-size: 0.7rem;
+    }
+    .alert {
+      color: red;
+    }
+    .grade {
+      width: 20%;
+    }
+    @media (max-width: 768px) {
+      width: 15%;
+    }
+{% endblock CUSTOM_CSS %}
+{% block MAIN %}
+      <header>
+        <h1>GPAI Training Transparency</h1>
+        <h2>A Quality Assessment of Public Summaries published under AI Act Article 53(1)(d)</h2>
+        <p><small>The <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-53">AI Act's Article 53(1)(d)</a> requires General-Purpose AI (GPAI) model providers to <i>"make publicly available a sufficiently detailed summary about the content used for training ... according to a template provided by the AI Office"</i>. We evaluate the <i>quality</i> for this documentation across two aspects: <mark>Transparency</mark> and <mark>Usefulness</mark> and assign a score using <a href="methodology">our developed methodology</a>. To assist GPAI Providers, the AI Office, and stakeholders, we also work on providing <a href="recommendations">recommendations</a>.</small></p>
+      {{ citation() }}
+      <div style="font-size: 0.7rem; background: #FFFFDD; margin: 0px; padding: 0px; padding-top: 2px; margin-left: 5px solid black; padding-left: 5px; margin-bottom: 5px;">
+        <p>This work has been featured in Euractiv as "<a href="https://www.euractiv.com/news/researchers-have-trouble-finding-ai-training-data-summaries/"><i>Researchers have trouble finding AI training data summaries</i></a>; and in an article in Tech Policy Press as "<a href="https://www.techpolicy.press/how-big-ai-developers-are-skirting-a-mandate-for-training-data-transparency/"><i>How Big AI Developers are Skirting a Mandate for Training Data Transparency</i></a>.</p>
+      </div>
+      <blockquote id="conclusion" style="border-left: 5px solid #a5410f; font-size: 0.7rem;">
+        The industry is yet to react significantly to Article 53(1)(d), with only a handful of GPAI model providers having yet published their public summaries for training content. These include high-quality summaries which shows the obligation is not a burden, and our framework is helpful to not only assess the quality, but to also improve it further.
+        <strong><em>Please let us know if you come across additional public summaries.</em></strong>
+      </blockquote>
+      </header>
+
+      <section id="results">
+        <h2>Evaluated Public Summaries</h2>
+        <p><small style="font-size: 0.75rem; line-height: 0;">Below is an overview of the evaluation with each model assigned a grade. <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#3e9b74;color:#fff;border-radius:50%;">A+</span> is the highest grade and <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#a5410f;color:#fff;border-radius:50%;">F</span> the lowest, with <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#a5410f;color:#fff;border-radius:50%; font-weight: bold;">&#33;</span> shown for missing summaries. Click the model name to go to the detailed evaluation page which has more information, a link to the summary, and our evaluation notes. You can also see a <a href="detailed-overview">detailed overview</a> of scores for each section of the public summary.</small></p>
+        <table id="evaluations">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th class="only-desktop">Provider</th>
+              <th style="text-align: center;">Transparency</th>
+              <th style="text-align: center;">Usefulness</th>
+            </tr>
+          </thead>
+          <tbody>{% for label, model in table_data.items()|sort(attribute='1.summed_score',reverse=True) %}
+            <tr>
+              <td class="name-cell">
+                <a href="evals/{{ model.model_page }}/" target="_blank" title="data: {{ model.filename }}">
+                  <u>{{ model.model_name }}</u>
+                </a>
+                <span class="only-mobile"><small>{{ model.org_name }}</small></span>
+              </td>
+              <td class="only-desktop">
+                {{ model.org_name }}
+              </td>
+              <td class="data-cell grade {% if model.t_grade == 'N/A' %}na{% else %}{{ model.t_col }}{% endif %}">
+                  {% if model.summary_link %}{{ model.t_grade }}{% if model.t_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
+              </td>
+              <td class="data-cell grade {% if model.u_grade == 'N/A' %}na{% else %}{{ model.u_col }}{% endif %}">
+                  {% if model.summary_link %}{{ model.u_grade }}{% if model.u_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
+              </td>
+            </tr>{% endfor %}
+          </tbody>
+        </table>
+      </section><br><br>
+
+      <section id="tldr">
+        <h2>TL;DR</h2>
+        <small style="font-size: 0.75rem;">
+          <p>Our work makes the following <strong>contributions</strong>:</p>
+          <ul>
+            <li>We provide a framework to assess the quality of public summaries of training content required under the AI Act's Article 53(1)(d).</li>
+            <li>Our quality assessment metrics represent best practices for how the information in the public summary should be provided (<i>transparency</i>) in order for rightsholders to utilise it effectively (<i>usefulness</i>).</li>
+            <li>We found only a handful published public summaries, and that they are mostly of a high-quality. Meanwhile other providers, noticeably larger ones, have not published anything yet. Our work sufficiently demonstrates that this is an intentional choice and that the legal obligation is not a burden as the current high-quality summaries are from small organisations and open source oriented efforts.</li>
+          </ul>
+          <p>Our work also contributes towards <strong>improving the ecosystem</strong>:</p>
+          <ul>
+            <li>We content that compliance cannot be <em>fait accompli</em>, and that the public summaries are a key factor in creating transparency and enabling rights enforcement. Towards this, our work also acts as a guide for providers who are yet to publish their summaries to consider how to do so with the highest possible quality and utility.</li>
+            <li>Compliance also invites practices that are intentionally or unintentionally deficient in achieving the goals. Our work serves as a useful tool for describing how and where and why certain practices are 'bad', e.g., where they use obfuscation, do not provide stated information. Using this, we can detect trends or patterns in whether the same issues occur in many summaries, and if so, how they can be collectively addressed through guidance, or enforced with priority.</li>
+            <li>The largest challenge in undertaking this work has been finding public summaries as there is no consistent format or practice for how they should be provided. For this, we provide <a href="recommendations">recommendations</a>.</li>
+            <li>The template for public summaries provided by the AI Office is intended to be revised with time to improve the state of documentation as well as to better guide the providers. We also provide <a href="recommendations">recommendations</a> for these to improve the quality and accessibility of the public summaries.</li>
+          </ul> 
+        </small>
+      </section>
+{% endblock MAIN %}

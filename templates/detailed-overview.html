@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}Analysis of AI Act Art.53(1)(d) Public Summaries{% endblock TITLE %}
+
+{% block CUSTOM_CSS %}
+article {
+    max-width: 90vw;
+}
+#table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    display: table;
+}
+#evaluations {
+    font-size: 0.5rem;
+}
+#evaluations .grade.na { background-color:darkgray; }
+#evaluations th:nth-child(1),td:nth-child(1) { 
+    text-align: end;
+    padding-right: 5px;
+}
+th {
+    text-align: center;
+    padding: 0px;
+}
+td {
+    font-size: 0.5rem;
+    padding: 2px;
+    width: 25px;
+}
+.name-cell {
+    font-size: 0.8rem;
+    width: 150px;
+}
+li {
+    font-size: 0.8rem;
+}
+{% endblock CUSTOM_CSS %}
+
+{% block MAIN %}
+    <header>
+        <h1>Overview of Quality Assessment Findings</h1>
+        <p style="font-size: 0.8rem;">Below is an overview of our quality assessment for each public summary. We scored each section of the summary based on <a href="methodology">our developed methodology</a>, and then calculated the overall score and grade. Each summary is scored for two dimensions: <strong>Transparency (T)</strong> on how the information is provided, and <strong> Usefulness (U)</strong> for whether it is sufficient for stakeholders' needs. For convenience, all scores are reflected as a percentage (out of hundred) and the grades are expressed on a scale from A+ (highest) to F (lowest). Sections in public summaries that were not filled in because they were not applicable are marked as "N/A". Public summaries not being provided are marked using "<span style="color:red; font-weight: bold;">&#33;</span>". The development of the framework and the evaluation steps are described on our <a href="methodology">methodology page</a> along with a <a href="methodology#FAQ">FAQ</a>.</p>
+    </div>
+    </header>
+
+    <section id="results">
+        <div id="table-wrapper">
+        <table id="evaluations" class="table-mobile">
+            <thead>
+                <tr class="main-header">
+                    <th>Section&rarr;</th>
+                    <th colspan="2">Grade</th>
+                    <th colspan="2">Overall</th>
+                    <th colspan="2">General Information</th>
+                    <th colspan="2">Public Data Sources</th>
+                    <th colspan="2">Private Data Sources</th>
+                    <th colspan="2">Scraped/Crawled Data</th>
+                    <th colspan="2">User Data</th>
+                    <th colspan="2">Synthetic & Other Data</th>
+                    <th colspan="2">Data Processing</th>
+                    <th colspan="2">Document</th>
+                </tr>
+                <tr class="second-header">
+                    <th>Model&darr;</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                    <th class="dimension-T-label" data-tooltip="Transparency">T</th>
+                    <th class="dimension-U-label" data-tooltip="Usefulness">U</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for label, model in table_data.items()|sort(attribute='1.summed_score', reverse=True) %}
+                <tr class="row-a">
+                    <td class="name-cell"><a href="evals/{{ model.model_page }}/"><u>{{ model.model_name }}</u></a></td>
+                    {% if model.summary_link %}<td class="outline {{ model.t_col }} data-cell grade">{{ model.t_grade|pad|safe }}</td>
+                    {% else %}<td class="closed data-cell grade"><span style="color:white; font-weight: bold;">&#33;</span></td>{% endif %}
+                    {% if model.summary_link %}<td class="outline {{ model.u_col }} data-cell grade">{{ model.u_grade|pad|safe }}</td>
+                        {% else %}<td class="closed data-cell grade"><span style="color:white; font-weight: bold;">&#33;</span></td>{% endif %}
+                    {% for score in model.detailed_scores %}
+                        {% if model.summary_link %}<td class="{{ score.col }} data-cell grade">{{ score.val }}</td>
+                        {% else %}<td class="closed data-cell grade"><span style="color:white; font-weight: bold;">&#33;</span></td>{% endif %}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <section id="collected_summaries">
+        <p><strong>Source and Analysis</strong>
+        <ul style="list-style-type: none;">
+            {% for label, model in table_data.items()|sort(attribute='0') %}
+            <li>
+                <strong>{{model.model_name}}</strong> by {{model.org_name}}
+                <br/><small>
+                    {% if model.summary_link %}
+                    Based on <a href="{{model.summary_link}}">public summary</a> dated {{model.summary_last_update}} and evaluated on {{model.eval_date}}.
+                    See <a href="./evals/{{model.model_page}}/">detailed analysis</a>.
+                    {% else %}
+                    <i>no public summary found</i>
+                    {% endif %}
+                </small>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock MAIN %}
