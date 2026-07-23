@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Grok 4.5"
-model_link: "https://x.ai/news/grok-4-5"
-organization: "xAI"
-org_link: "https://x.ai/"
-evaluation_date: "2026-07-20"
-public_summary_link: "https://media.x.ai/v1/website/public-summary-of-training-content-for-grok-4.5_8jul2026.docx-fc25014a.pdf" 
-public_summary_date: "2026-07-08"
-public_summary_location: "https://media.x.ai"
-model_publication_date: "2026-07-09"
+model_name: "Gemini 3 Pro"
+model_link: "https://aistudio.google.com/prompts/new_chat?model=gemini-3-pro-preview"
+organization: "Google"
+org_link: "https://deepmind.google/"
+evaluation_date: "2026-07-21"
+public_summary_link: "https://storage.googleapis.com/transparencyreport/report-downloads/pdf-report-ii_2026-7-2_2026-7-2_en_v1.pdf"
+public_summary_date: "2026-07-02"
+public_summary_location: "https://storage.googleapis.com/"
+model_publication_date: "2025-11-18"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "Grok-45_2026_07_17.pdf"
+archive_file_name: "Gemini_2026_07_21.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
@@ -38,7 +38,7 @@ S1: # Document-level requirements
     notes: ""
 
   D5: # Accessibility
-    score: 6
+    score: 5
     max_score: 10
     notes: ""
 
@@ -49,13 +49,13 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 23
-    max_score: 43
+    score: 29
+    max_score: 40
     notes: ""
 
   D2: # Completeness
-    score: 64
-    max_score: 78
+    score: 44
+    max_score: 72
     notes: ""
 
   D3: # Consistency
@@ -64,8 +64,8 @@ S2: # General information
     notes: ""
 
   D4: # Correctness
-    score: 19
-    max_score: 19
+    score: 22
+    max_score: 22
     notes: ""
 
   D5: # Accessibility
@@ -74,14 +74,14 @@ S2: # General information
     notes: ""
 
   D6: # Comprehension
-    score: 14
-    max_score: 14
+    score: 6
+    max_score: 11
     notes: ""
 
 S3: # Public datasets
   D1: # Clarity
     score: 0
-    max_score: 60
+    max_score: 76
     notes: ""
 
   D2: # Completeness
@@ -111,12 +111,12 @@ S3: # Public datasets
 
 S4: # Private datasets
   D1: # Clarity
-    score: 0
+    score: 32
     max_score: 32
     notes: ""
 
   D2: # Completeness
-    score: 24
+    score: 40
     max_score: 88
     notes: ""
 
@@ -142,12 +142,12 @@ S4: # Private datasets
 
 S5: # Scraped/crawled data
   D1: # Clarity
-    score: 79
+    score: 72
     max_score: 129
     notes: ""
 
   D2: # Completeness
-    score: 94
+    score: 92
     max_score: 158
     notes: ""
 
@@ -157,7 +157,7 @@ S5: # Scraped/crawled data
     notes: ""
 
   D4: # Correctness
-    score: 68
+    score: 61
     max_score: 93
     notes: ""
 
@@ -173,13 +173,13 @@ S5: # Scraped/crawled data
 
 S6: # User data
   D1: # Clarity
-    score: 16
-    max_score: 16
+    score: 0
+    max_score: 15
     notes: ""
 
   D2: # Completeness
-    score: 27
-    max_score: 27
+    score: 11
+    max_score: 26
     notes: ""
 
   D3: # Consistency
@@ -188,8 +188,8 @@ S6: # User data
     notes: ""
 
   D4: # Correctness
-    score: 12
-    max_score: 12
+    score: 11
+    max_score: 11
     notes: ""
 
   D5: # Accessibility
@@ -198,18 +198,18 @@ S6: # User data
     notes: ""
 
   D6: # Comprehension
-    score: 15
+    score: 0
     max_score: 15
     notes: ""
 
 S7: # Synthetic & other
   D1: # Clarity
-    score: 24
+    score: 41
     max_score: 65
     notes: ""
 
   D2: # Completeness
-    score: 26.5
+    score: 47
     max_score: 47
     notes: ""
 
@@ -219,7 +219,7 @@ S7: # Synthetic & other
     notes: ""
 
   D4: # Correctness
-    score: 47
+    score: 35
     max_score: 47
     notes: ""
 
@@ -235,12 +235,12 @@ S7: # Synthetic & other
 
 S8: # Data processing
   D1: # Clarity
-    score: 0
+    score: 18
     max_score: 18
     notes: ""
 
   D2: # Completeness
-    score: 18
+    score: 10.5
     max_score: 18
     notes: ""
 
@@ -260,7 +260,7 @@ S8: # Data processing
     notes: ""
 
   D6: # Comprehension
-    score: 15
+    score: 42
     max_score: 69
     notes: ""
 
