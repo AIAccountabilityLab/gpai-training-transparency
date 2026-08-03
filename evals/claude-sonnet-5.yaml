@@ -9,7 +9,7 @@ evaluation_date: ""
 public_summary_link: "https://trust.anthropic.com/resources" 
 public_summary_date: "2026-07-24"
 public_summary_location: "https://trust.anthropic.com/resources"
-model_publication_date: ""
+model_publication_date: "2026-06-30"
 category: "New model" # New model, fine-tuned model
 archive_file_name: "Claude_Sonnet_5_2026_08_03.pdf"
 

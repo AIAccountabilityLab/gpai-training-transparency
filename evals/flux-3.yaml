@@ -9,7 +9,7 @@ evaluation_date: ""
 public_summary_link: "https://bfl.ai/transparency?tab=training-data-summaries" 
 public_summary_date: "2026-08-01"
 public_summary_location: "https://bfl.ai/transparency?tab=training-data-summaries"
-model_publication_date: ""
+model_publication_date: "2026-07-16"
 category: "New model" # New model, fine-tuned model
 archive_file_name: "FLUX_3_2026_08_03.pdf"
 
