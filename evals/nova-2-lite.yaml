@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Aya Vision 32B"
-model_link: "https://huggingface.co/CohereLabs/aya-vision-32b"
-organization: "Cohere"
-org_link: "https://cohere.com/"
+model_name: "Amazon Nova 2"
+model_link: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html"
+organization: "Amazon"
+org_link: "https://www.amazon.com/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2026-01-10"
+public_summary_link: "https://docs.aws.amazon.com/ai/responsible-ai/nova-2-lite/overview.html" 
+public_summary_date: "2026-07-27"
+public_summary_location: "https://docs.aws.amazon.com/ai/responsible-ai/nova-2-lite/overview.html"
+model_publication_date: "2025-12-02"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Nova_2_Lite_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

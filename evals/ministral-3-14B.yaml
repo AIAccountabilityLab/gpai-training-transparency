@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "C4AI Command A Plus 05 2026"
-model_link: "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16"
-organization: "Cohere"
-org_link: "https://cohere.com/"
+model_name: "Ministral 3 14B"
+model_link: "https://legal.mistral.ai/ai-governance/models/ministral-3-14b"
+organization: "Mistral AI"
+org_link: "https://mistral.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2026-05-20"
+public_summary_link: "https://legal.cms.mistral.ai/assets/36afc281-be9c-4cd0-9763-81cc19540895" 
+public_summary_date: "2026-07-31"
+public_summary_location: "https://legal.mistral.ai/ai-governance/models/ministral-3-14b"
+model_publication_date: "2025-12-02"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Ministral_3_14B_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

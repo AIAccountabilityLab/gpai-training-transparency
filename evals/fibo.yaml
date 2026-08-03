@@ -6,12 +6,12 @@ model_link: "https://huggingface.co/briaai/FIBO"
 organization: "Bria AI"
 org_link: "https://bria.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
+public_summary_link: "https://drive.google.com/file/d/1z3JFPBQCRKdj5F-Qfgp4TaNITWcMZtOi/view" 
+public_summary_date: "2026-08-02"
+public_summary_location: "https://bria.ai/security-and-compliance"
 model_publication_date: "2026-03-30"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "FIBO_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

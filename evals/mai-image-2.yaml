@@ -11,7 +11,7 @@ public_summary_date: "2026-03-19"
 public_summary_location: "https://microsoft.ai/"
 model_publication_date: "2026-03-19"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "MAI-Image-2-2026-07-21.pdf"
+archive_file_name: "MAI_Image_2_2026_07_21.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

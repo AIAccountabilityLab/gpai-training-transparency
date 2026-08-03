@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Amazon Nova 2"
-model_link: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html"
-organization: "Amazon"
-org_link: "https://www.amazon.com/"
+model_name: "FLUX.3"
+model_link: "https://bfl.ai/blog/flux-3"
+organization: "Black Forest Labs"
+org_link: "https://bfl.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2025-12-02"
+public_summary_link: "https://bfl.ai/transparency?tab=training-data-summaries" 
+public_summary_date: "2026-08-01"
+public_summary_location: "https://bfl.ai/transparency?tab=training-data-summaries"
+model_publication_date: ""
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "FLUX_3_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

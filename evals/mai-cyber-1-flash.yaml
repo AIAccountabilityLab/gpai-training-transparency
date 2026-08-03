@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Mistral Large 3 675B Base 2512"
-model_link: "https://huggingface.co/mistralai/Mistral-Large-3-675B-Base-2512"
-organization: "Mistral AI"
-org_link: "https://mistral.ai/"
+model_name: "MAI Cyber 1 Flash"
+model_link: "https://microsoft.ai/models/mai-cyber-1-flash/"
+organization: "Microsoft AI"
+org_link: "https://microsoft.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2025-12-02"
+public_summary_link: "https://microsoft.ai/pdf/MAI-Cyber-1-Flash-Data-Card.pdf" 
+public_summary_date: "2026-07-27"
+public_summary_location: "https://microsoft.ai/pdf/MAI-Cyber-1-Flash-Model-Card.pdf"
+model_publication_date: "2026-07-27"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 

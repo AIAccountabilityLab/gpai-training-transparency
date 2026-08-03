@@ -6,12 +6,12 @@ model_link: "https://microsoft.ai/models/mai-code-1-flash/"
 organization: "Microsoft AI"
 org_link: "https://microsoft.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
+public_summary_link: "https://microsoft.ai/pdf/MAI-Code-1-Flash-Data-Card.PDF" 
+public_summary_date: "2026-06-02"
+public_summary_location: "https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDF"
 model_publication_date: "2026-06-02"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "MAI_Code_1_Flash_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

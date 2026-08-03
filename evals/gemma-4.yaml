@@ -6,12 +6,12 @@ model_link: "https://huggingface.co/google/gemma-4-31B"
 organization: "Google"
 org_link: "https://deepmind.google"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
+public_summary_link: "https://storage.googleapis.com/transparencyreport/report-downloads/pdf-report-nn_2026-7-31_2026-7-31_en_v1.pdf" 
+public_summary_date: "2026-07-31"
+public_summary_location: "https://transparencyreport.google.com/"
 model_publication_date: "2026-04-02"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Gemma_4_2028_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

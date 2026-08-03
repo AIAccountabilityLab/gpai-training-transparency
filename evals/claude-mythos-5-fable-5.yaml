@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Apriel 1.5 15B Thinker"
-model_link: "https://huggingface.co/ServiceNow-AI/Apriel-1.5-15b-Thinker"
-organization: "ServiceNow"
-org_link: "https://www.servicenow.com/"
+model_name: "Claude Fable 5"
+model_link: "https://www.anthropic.com/claude/fable"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2025-09-30"
+public_summary_link: "https://trust.anthropic.com/resources" 
+public_summary_date: "2026-07-24"
+public_summary_location: "https://trust.anthropic.com/resources"
+model_publication_date: "2026-06-09"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Claude_Mythos_5_Fable_5_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10

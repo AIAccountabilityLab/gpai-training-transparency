@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Claude Fable 5"
-model_link: "https://www.anthropic.com/claude/fable"
-organization: "Anthropic"
-org_link: "https://www.anthropic.com/"
+model_name: "Mistral Large 3 675B Base 2512"
+model_link: "https://huggingface.co/mistralai/Mistral-Large-3-675B-Base-2512"
+organization: "Mistral AI"
+org_link: "https://mistral.ai/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2026-06-09"
+public_summary_link: "https://legal.cms.mistral.ai/assets/5f6ed10f-4320-41b2-9f76-d6718533c744" 
+public_summary_date: "2026-07-31"
+public_summary_location: "https://legal.mistral.ai/ai-governance/models/mistral-small-4"
+model_publication_date: ""
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Mistral_Small_4_2026_08_03.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
