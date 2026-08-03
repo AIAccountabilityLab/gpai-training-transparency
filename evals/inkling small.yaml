@@ -1,7 +1,7 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Inkling"
+model_name: "Inkling Small"
 model_link: "https://huggingface.co/thinkingmachines/Inkling-Small"
 organization: "Thinking Machines"
 org_link: "https://thinkingmachines.ai/"
