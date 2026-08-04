@@ -265,4 +265,4 @@ S8: # Data processing
     notes: ""
 
 
-general_notes: ""
+general_notes: "Anthropic provides training data summaries which, on the whole, describe training data only on a high level. Relevant characteristics of training data are described either at a high level or not at all. No individual datasets are described besides the CommonCrawl. Descriptions of crawlers meet requisite standards, however the content they crawled is not described in sufficient detail. Services used to collect user data, and models used to generate synthetic data, are not enumerated. Lastly, the data summary contains little detail on how the provider ensures that they are up-to-date with user right requests. The summary scores <span class=\"openness partial\">57.29%</span> with Grade <strong>C</strong> for <strong><i>transparency</i></strong> and <span class=\"openness closed\">49.69%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."

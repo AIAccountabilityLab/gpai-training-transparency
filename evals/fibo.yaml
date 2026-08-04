@@ -265,4 +265,4 @@ S8: # Data processing
     notes: ""
 
 
-general_notes: ""
+general_notes: "The training data summary for FIBO provides an excellent summary for a model trained entirely on licensed data. The summary adheres to the structure of the template, and provides information to the requisite level of detail. Points are lost primarily due to the general description of non-publicly known private datasets obtained from third parties not going into the levels of detail encouraged by the template. The summary scores <span class=\"openness open\">87.01%</span> with a grade of <strong>B+</strong> for <i>transparency</i>, and <span class=\"openness open\">97.2%</span> with a grade of <strong>A+</strong> for <i>usefulness</i>."
