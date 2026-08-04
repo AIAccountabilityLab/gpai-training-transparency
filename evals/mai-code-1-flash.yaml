@@ -265,4 +265,4 @@ S8: # Data processing
     notes: ""
 
 
-general_notes: ""
+general_notes: "The public summary for MAI Code 1 Flash can be found <a href=\"https://microsoft.ai/pdf/MAI-Code-1-Flash-Data-Card.PDF\" target=\"_blank\">, linked from the model's model card</a>. The summary mostly matches the structure of the template, however includes some additional fields which are generally helpful. Some key questions provide high-level information rather than the more detailed information which is encouraged. We assessed the summary's score to be <span class=\"openness partial\">67.83%</span> with Grade <strong>C+</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">49.1%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."
