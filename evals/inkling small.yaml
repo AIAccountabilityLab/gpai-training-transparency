@@ -85,7 +85,7 @@ S3: # Public datasets
     notes: ""
 
   D2: # Completeness
-    score: 66
+    score: 48
     max_score: 140
     notes: ""
 

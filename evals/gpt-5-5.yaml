@@ -85,7 +85,7 @@ S3: # Public datasets
     notes: "List of large publicly available datasets only describes CommonCrawl. General description of other publicly available information contains some unnecessary information."
 
   D2: # Completeness
-    score: 49
+    score: 91
     max_score: 143
     notes: "List of large publicly available datasets only describes CommonCrawl. Descriptions do not contain info relating to approximate start and end dates of data collection."
 

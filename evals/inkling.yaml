@@ -38,7 +38,7 @@ S1: # Document-level requirements
     notes: ""
 
   D5: # Accessibility
-    score: 7
+    score: 9.4
     max_score: 10
     notes: ""
 
@@ -85,7 +85,7 @@ S3: # Public datasets
     notes: ""
 
   D2: # Completeness
-    score: 66
+    score: 48
     max_score: 140
     notes: ""
 

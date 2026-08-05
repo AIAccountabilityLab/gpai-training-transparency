@@ -49,7 +49,7 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 11
+    score: 16
     max_score: 33
     notes: ""
 
@@ -69,7 +69,7 @@ S2: # General information
     notes: ""
 
   D5: # Accessibility
-    score: 5
+    score: 2.5
     max_score: 5
     notes: ""
 
@@ -85,7 +85,7 @@ S3: # Public datasets
     notes: ""
 
   D2: # Completeness
-    score: 52
+    score: 14
     max_score: 140
     notes: ""
 
@@ -147,7 +147,7 @@ S5: # Scraped/crawled data
     notes: ""
 
   D2: # Completeness
-    score: 68
+    score: 63
     max_score: 158
     notes: ""
 
@@ -209,7 +209,7 @@ S7: # Synthetic & other
     notes: ""
 
   D2: # Completeness
-    score: 23
+    score: 14.5
     max_score: 47
     notes: ""
 
