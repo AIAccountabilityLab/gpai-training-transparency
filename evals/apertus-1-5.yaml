@@ -1,24 +1,25 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Muse Image"
-model_link: "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/"
-organization: "Meta"
-org_link: "https://www.meta.com/"
-evaluation_date: "2026-07-21"
-public_summary_link: "https://scontent-ams2-1.xx.fbcdn.net/m1/v/t0.84174-6/An9BF4dBYkAKjeGpluhekU7VtJbQg6ES6EFahpoJ6kryNn3RSmmTp3y4bKULETf302pS_BxNlBlyBagbElNaEr28zpo5DB0vqojbfYh-zurs4Q0XVVKOBAnbeSHTz_7_TedTRoU?_nc_gid=BAjn2i1WTzzLRGnbFEyYfQ&_nc_oc=AdoWY07EO0haRKgq_ymFg45hG-MtS5xRzcyTiFfZiP_OZ8DdqgO2Dea0JvOIB_zAdxU&ccb=10-5&oh=00_AQCbD9n5XY1_SjPRIVHBULk5w3cbkVxnj5ujvO0smvwKcw&oe=6A63BEC4&_nc_sid=68f2c3"
-public_summary_date: "2026-07-06"
-public_summary_location: "https://transparency.meta.com/reports/regulatory-transparency-reports/"
-model_publication_date: "2026-07-07"
+model_name: "Apertus v1.5"
+model_link: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/tree/main"
+organization: "Swiss AI Initiative"
+org_link: "https://www.swiss-ai.org/"
+evaluation_date: "2026-08-05"
+public_summary_link: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/main/Apertus_1_5_EU_Public_Summary.pdf"
+public_summary_date: "2026-07-17"
+public_summary_location: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B"
+model_publication_date: "2026-07-14"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "Muse_Image_2026_07_21.pdf"
+archive_file_name: "Apertus_1_5_2026_08_05.pdf"
+previous_versions:
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 8.5
+    score: 9
     max_score: 11
     notes: ""
 
@@ -33,12 +34,12 @@ S1: # Document-level requirements
     notes: ""
 
   D4: # Correctness
-    score: 3
+    score: 3.5
     max_score: 5
     notes: ""
 
   D5: # Accessibility
-    score: 6
+    score: 10
     max_score: 10
     notes: ""
 
@@ -49,13 +50,13 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 19
-    max_score: 31
+    score: 20
+    max_score: 42
     notes: ""
 
   D2: # Completeness
-    score: 45.5
-    max_score: 74
+    score: 51
+    max_score: 62
     notes: ""
 
   D3: # Consistency
@@ -64,13 +65,13 @@ S2: # General information
     notes: ""
 
   D4: # Correctness
-    score: 13.5
-    max_score: 15
+    score: 21
+    max_score: 21
     notes: ""
 
   D5: # Accessibility
-    score: 0
-    max_score: 0
+    score: 5
+    max_score: 5
     notes: ""
 
   D6: # Comprehension
@@ -80,44 +81,44 @@ S2: # General information
 
 S3: # Public datasets
   D1: # Clarity
-    score: 32
+    score: 92
     max_score: 92
     notes: ""
 
   D2: # Completeness
-    score: 12
-    max_score: 92
+    score: 95
+    max_score: 95
     notes: ""
 
   D3: # Consistency
-    score: 3
-    max_score: 3
+    score: 23
+    max_score: 23
     notes: ""
 
   D4: # Correctness
+    score: 23
+    max_score: 23
+    notes: ""
+
+  D5: # Accessibility
     score: 20
     max_score: 20
     notes: ""
 
-  D5: # Accessibility
-    score: 0
-    max_score: 20
-    notes: ""
-
   D6: # Comprehension
-    score: 16
-    max_score: 16
+    score: 19
+    max_score: 19
     notes: ""
 
 S4: # Private datasets
   D1: # Clarity
-    score: 32
-    max_score: 32
+    score: 0
+    max_score: 0
     notes: ""
 
   D2: # Completeness
-    score: 48
-    max_score: 88
+    score: 2
+    max_score: 2
     notes: ""
 
   D3: # Consistency
@@ -126,8 +127,8 @@ S4: # Private datasets
     notes: ""
 
   D4: # Correctness
-    score: 24
-    max_score: 24
+    score: 2
+    max_score: 2
     notes: ""
 
   D5: # Accessibility
@@ -136,18 +137,18 @@ S4: # Private datasets
     notes: ""
 
   D6: # Comprehension
-    score: 16
-    max_score: 16
+    score: 0
+    max_score: 0
     notes: ""
 
 S5: # Scraped/crawled data
   D1: # Clarity
-    score: 62
+    score: 0
     max_score: 129
     notes: ""
 
   D2: # Completeness
-    score: 81
+    score: 3
     max_score: 158
     notes: ""
 
@@ -157,7 +158,7 @@ S5: # Scraped/crawled data
     notes: ""
 
   D4: # Correctness
-    score: 68
+    score: 3
     max_score: 93
     notes: ""
 
@@ -167,19 +168,19 @@ S5: # Scraped/crawled data
     notes: ""
 
   D6: # Comprehension
-    score: 20
+    score: 0
     max_score: 58
     notes: ""
 
 S6: # User data
   D1: # Clarity
-    score: 15
-    max_score: 15
+    score: 0
+    max_score: 0
     notes: ""
 
   D2: # Completeness
-    score: 11
-    max_score: 26
+    score: 8
+    max_score: 8
     notes: ""
 
   D3: # Consistency
@@ -188,39 +189,8 @@ S6: # User data
     notes: ""
 
   D4: # Correctness
-    score: 11
-    max_score: 11
-    notes: ""
-
-  D5: # Accessibility
-    score: 15
-    max_score: 15
-    notes: ""
-
-  D6: # Comprehension
-    score: 15
-    max_score: 15
-    notes: ""
-
-S7: # Synthetic & other
-  D1: # Clarity
-    score: 0
-    max_score: 48
-    notes: ""
-
-  D2: # Completeness
-    score: 6
-    max_score: 30
-    notes: ""
-
-  D3: # Consistency
-    score: 6
-    max_score: 6
-    notes: ""
-
-  D4: # Correctness
-    score: 6
-    max_score: 30
+    score: 8
+    max_score: 8
     notes: ""
 
   D5: # Accessibility
@@ -230,18 +200,49 @@ S7: # Synthetic & other
 
   D6: # Comprehension
     score: 0
-    max_score: 12
+    max_score: 0
+    notes: ""
+
+S7: # Synthetic & other
+  D1: # Clarity
+    score: 0
+    max_score: 0
+    notes: ""
+
+  D2: # Completeness
+    score: 3
+    max_score: 3
+    notes: ""
+
+  D3: # Consistency
+    score: 6
+    max_score: 6
+    notes: ""
+
+  D4: # Correctness
+    score: 3
+    max_score: 3
+    notes: ""
+
+  D5: # Accessibility
+    score: 0
+    max_score: 0
+    notes: ""
+
+  D6: # Comprehension
+    score: 0
+    max_score: 0
     notes: ""
 
 S8: # Data processing
   D1: # Clarity
-    score: 0
-    max_score: 18
+    score: 24
+    max_score: 24
     notes: ""
 
   D2: # Completeness
-    score: 10.5
-    max_score: 18
+    score: 19
+    max_score: 19
     notes: ""
 
   D3: # Consistency
@@ -250,19 +251,19 @@ S8: # Data processing
     notes: ""
 
   D4: # Correctness
-    score: 36
-    max_score: 36
+    score: 37
+    max_score: 37
     notes: ""
 
   D5: # Accessibility
-    score: 7.5
+    score: 15
     max_score: 15
     notes: ""
 
   D6: # Comprehension
-    score: 33
-    max_score: 69
+    score: 51
+    max_score: 51
     notes: ""
 
 
-general_notes: "The public summary for MAI Image 2 can be found <a href=\"https://transparency.meta.com/reports/regulatory-transparency-reports/\" target=\"_blank\"> on Meta's transparency reports page</a>. The summary matches the structure of the template. A previous version of the template is missing, despite being implied. The summary links to external pages to provide some key information, resulting in loss of points. We assessed the summary's score to be <span class=\"openness partial\">52.36%</span> with Grade <strong>C</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">49.66%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."
+general_notes: ""

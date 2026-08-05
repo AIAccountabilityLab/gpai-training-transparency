@@ -88,7 +88,7 @@ S3: # Public datasets
 
   D2: # Completeness
     score: 104
-    max_score: 140
+    max_score: 124
     notes: "Public dataset field does not only provide a list of large publicly available datasets, with explanations for selecting part of the datasets where necessary.<br/><br/>No information relating to the types of modality contained in the datasets."
 
   D3: # Consistency
