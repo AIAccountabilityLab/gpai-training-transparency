@@ -11,7 +11,7 @@ public_summary_date: "2026-06-26"
 public_summary_location: "https://help-lb.openai.com/en/articles/12141645-eu-ai-act"
 model_publication_date: "2025-08-07"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "GPT-55_2026_07_14.pdf"
+archive_file_name: "GPT_5_5_2026_07_14.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
@@ -85,8 +85,8 @@ S3: # Public datasets
     notes: "List of large publicly available datasets only describes CommonCrawl. General description of other publicly available information contains some unnecessary information."
 
   D2: # Completeness
-    score: 49
-    max_score: 143
+    score: 91
+    max_score: 111
     notes: "List of large publicly available datasets only describes CommonCrawl. Descriptions do not contain info relating to approximate start and end dates of data collection."
 
   D3: # Consistency
@@ -265,4 +265,4 @@ S8: # Data processing
     notes: "Provider does not describe how they use datasets with opt-out mechanisms, nor how they ensure that they are up to date with user rights requests."
 
 
-general_notes: "The public summary for GPT-5.5 can be found <a href=\"cdn.openai.com/pdf/eb1f5ac3-009e-4d51-b2da-f5f327913115/gpt-5-5-eu-ai-act-public-summary-of-training-content.pdf\" target=\"_blank\"> on OpenAI's site</a>. The summary matches the structure of the template, with points being lost primarily due to providing high-level information where more detailed information is encouraged. We assessed the summary's score to be <span class=\"openness partial\">62.52%</span> with Grade <strong>C+</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">47.52%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."
+general_notes: "The public summary for GPT-5.5 can be found <a href=\"cdn.openai.com/pdf/eb1f5ac3-009e-4d51-b2da-f5f327913115/gpt-5-5-eu-ai-act-public-summary-of-training-content.pdf\" target=\"_blank\"> on OpenAI's site</a>, linked on one of OpenAI's help pages. The summary matches the structure of the template, with points being lost primarily due to providing high-level information where more detailed information is encouraged. We assessed the summary's score to be <span class=\"openness partial\">67.59%</span> with Grade <strong>C+</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">47.52%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."

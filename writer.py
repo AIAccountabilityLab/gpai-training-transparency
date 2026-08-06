@@ -70,6 +70,13 @@ def recommendations():
     log.DEBUG('wrote recommendations page')
 
 
+def list_summaries(data):
+    template = env.get_template("list_summaries.html")
+    with open(f'./{OUT_DIR}/list_summaries.html', 'w') as fd:
+        fd.write(template.render(table_data=data))
+    log.DEBUG('wrote list summaries page')
+
+
 def blog():
     blogdir = './blog'
     from blog import get_posts

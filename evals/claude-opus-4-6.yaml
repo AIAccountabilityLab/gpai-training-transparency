@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Amazon Nova 2"
-model_link: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html"
-organization: "Amazon"
-org_link: "https://www.amazon.com/"
+model_name: "Claude Opus 4.6"
+model_link: "https://www.anthropic.com/claude/opus"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2025-12-02"
+model_publication_date: "2026-02-05"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 

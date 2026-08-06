@@ -3,8 +3,8 @@
 {% block TITLE %}GPAI Training Transparency{% endblock TITLE %}
 
 {% block CUSTOM_CSS %}
-    #evaluations {
-      font-size: 0.7rem;
+    body {
+      font-size: 0.8rem;
     }
     .alert {
       color: red;
@@ -15,72 +15,140 @@
     @media (max-width: 768px) {
       width: 15%;
     }
+
+    section {
+      margin-bottom: 5px;
+      padding-top: 5px;
+      border-top: 2px solid black;
+    }
 {% endblock CUSTOM_CSS %}
 {% block MAIN %}
+{% set count_found = table_data.items() | selectattr("1.summary_link") | list | length %}
+{% set count_missing = table_data.items() | selectattr("1.summary_link", "eq", "") | list | length %}
       <header>
         <h1>GPAI Training Transparency</h1>
-        <h2>A Quality Assessment of Public Summaries published under AI Act Article 53(1)(d)</h2>
-        <p><small>The <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-53">AI Act's Article 53(1)(d)</a> requires General-Purpose AI (GPAI) model providers to <i>"make publicly available a sufficiently detailed summary about the content used for training ... according to a template provided by the AI Office"</i>. We evaluate the <i>quality</i> for this documentation across two aspects: <mark>Transparency</mark> and <mark>Usefulness</mark> and assign a score using <a href="methodology">our developed methodology</a>. To assist GPAI Providers, the AI Office, and stakeholders, we also work on providing <a href="recommendations">recommendations</a>.</small></p>
+        <h2>Quality Assessment AI Act Article 53(1)(d) Public Summaries</h2>
+        <p>The <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-53">AI Act's Article 53(1)(d)</a> requires General-Purpose AI (GPAI) model providers to publish <i>"a sufficiently detailed summary about the content used for training ... according to <a href="https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models">a template</a> provided by the <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-office">AI Office</a>"</i>. Enforcement by the AI Office has begun as of <strong>2nd August 2026</strong>.</p>
+        <p>To support this, we discovered <a href="list_summaries"><strong><em>{{ count_found }} public summaries</em></strong></a>, which we evaluate across two aspects: <mark>Transparency</mark> and <mark>Usefulness</mark> and assign a score using <a href="methodology">our developed methodology</a>. Our findings expose challenges regarding accessibility, vagueness and incompleteness of information, and limitations this poses on rightsholders. We also highlight <strong><em>missing summaries for {{ count_missing }} models</em></strong> based on our preliminary analysis. Please <a href="about">get in touch</a> if you find any summaries or would like to know more about our work.</p>
       {{ citation() }}
-      <div style="font-size: 0.7rem; background: #FFFFDD; margin: 0px; padding: 0px; padding-top: 2px; margin-left: 5px solid black; padding-left: 5px; margin-bottom: 5px;">
-        <p>This work has been featured in Euractiv as "<a href="https://www.euractiv.com/news/researchers-have-trouble-finding-ai-training-data-summaries/"><i>Researchers have trouble finding AI training data summaries</i></a>; and in an article in Tech Policy Press as "<a href="https://www.techpolicy.press/how-big-ai-developers-are-skirting-a-mandate-for-training-data-transparency/"><i>How Big AI Developers are Skirting a Mandate for Training Data Transparency</i></a>.</p>
+      <div style="font-size: 0.7rem; background: #FFFFDD; margin: 0px; padding: 0px; padding-top: 5px; margin-left: 5px solid black; padding-left: 5px; margin-bottom: 5px;">
+        <p><strong>Media Coverage:</strong> <br/>
+          <em>Euractiv</em> "<a href="https://www.euractiv.com/news/researchers-have-trouble-finding-ai-training-data-summaries/"><i>Researchers have trouble finding AI training data summaries</i></a> (2 Mar 2026); <br/>
+          <em>Tech Policy Press</em> "<a href="https://www.techpolicy.press/how-big-ai-developers-are-skirting-a-mandate-for-training-data-transparency/"><i>How Big AI Developers are Skirting a Mandate for Training Data Transparency</i></a> (4 Mar 2026).
+        </p>
       </div>
-      <blockquote id="conclusion" style="border-left: 5px solid #a5410f; font-size: 0.7rem;">
-        The industry is yet to react significantly to Article 53(1)(d), with only a handful of GPAI model providers having yet published their public summaries for training content. These include high-quality summaries which shows the obligation is not a burden, and our framework is helpful to not only assess the quality, but to also improve it further.
-        <strong><em>Please let us know if you come across additional public summaries.</em></strong>
-      </blockquote>
       </header>
 
       <section id="results">
-        <h2>Evaluated Public Summaries</h2>
-        <p><small style="font-size: 0.75rem; line-height: 0;">Below is an overview of the evaluation with each model assigned a grade. <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#3e9b74;color:#fff;border-radius:50%;">A+</span> is the highest grade and <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#a5410f;color:#fff;border-radius:50%;">F</span> the lowest, with <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#a5410f;color:#fff;border-radius:50%; font-weight: bold;">&#33;</span> shown for missing summaries. <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#0F72A4;color:#fff;border-radius:50%; font-weight: bold;">WIP</span> indicates published summaries under assessment. Click the model name to go to the detailed evaluation page which has more information, a link to the summary, and our evaluation notes. You can also see a <a href="detailed-overview">detailed overview</a> of scores for each section of the public summary.</small></p>
-        <table id="evaluations">
-          <thead>
-            <tr>
-              <th>Model</th>
-              <th class="only-desktop">Provider</th>
-              <th style="text-align: center;">Transparency</th>
-              <th style="text-align: center;">Usefulness</th>
-            </tr>
-          </thead>
-          <tbody>{% for label, model in table_data.items()|sort(attribute='1.summed_score',reverse=True) %}
-            <tr>
-              <td class="name-cell">
-                <a href="evals/{{ model.model_page }}/" target="_blank" title="data: {{ model.filename }}">
-                  <u>{{ model.model_name }}</u>
-                </a>
-                <span class="only-mobile"><small>{{ model.org_name }}</small></span>
-              </td>
-              <td class="only-desktop">
-                {{ model.org_name }}
-              </td>
-              <td class="data-cell grade {% if model.t_grade == 'N/A' %}na{% else %}{{ model.t_col }}{% endif %}">
-                  {% if model.summary_link %}{{ model.t_grade }}{% if model.t_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
-              </td>
-              <td class="data-cell grade {% if model.u_grade == 'N/A' %}na{% else %}{{ model.u_col }}{% endif %}">
-                  {% if model.summary_link %}{{ model.u_grade }}{% if model.u_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
-              </td>
-            </tr>{% endfor %}
-          </tbody>
-        </table>
-      </section><br><br>
+        <p>
+          The table below shows an <a href="#evaluations">overview evaluated public summaries</a> with <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#3e9b74;color:#fff;border-radius:50%;">A+</span> as the highest grade score and <span style="display:inline-flex;align-items:center;justify-content:center;width:2em;height:2em;background:#a5410f;color:#fff;border-radius:50%;">F</span> the lowest. You can also click on the columns to sort the table by name or by score. A separate list is provided further below with published summaries <a href="#WIP"> currently being evaluated</a>, and another list for models which require a <a href="#missing">public summary is missing</a> despite being necessary.
+          You can click the model name to go to the detailed evaluation page which has more information, a link to the summary, and our evaluation notes. See <a href="detailed-overview">detailed overview</a> with scores for each section of the public summary. The <a href="list_summaries">list of summaries</a> provides links to all found summaries.</p>
+        </p>
+        <section id="evaluations">
+          <h3>Evaluated Public Summaries</h3>
+          <table id="table-evaluations" class="sortable">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th class="only-desktop">Provider</th>
+                <th style="text-align: center;">Transparency</th>
+                <th style="text-align: center;">Usefulness</th>
+              </tr>
+            </thead>
+            <tbody>{% for label, model in table_data.items()
+              |sort(attribute='1.summed_score',reverse=True)
+              if model.t_grade != 'N/A' and model.u_grade != 'N/A'  %}
+              <tr>
+                <td class="name-cell">
+                  <a href="evals/{{ model.model_page }}/" target="_blank" title="data: {{ model.filename }}">
+                    <u>{{ model.model_name }}</u>
+                  </a>
+                  <span class="only-mobile">{ model.org_name }}</span>
+                </td>
+                <td class="only-desktop">
+                  {{ model.org_name }}
+                </td>
+                <td class="data-cell grade {% if model.t_grade == 'N/A' %}na{% else %}{{ model.t_col }}{% endif %}" sorttable_customkey="{{model.t_score}}">
+                    {% if model.summary_link %}{{ model.t_grade }}{% if model.t_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
+                </td>
+                <td class="data-cell grade {% if model.u_grade == 'N/A' %}na{% else %}{{ model.u_col }}{% endif %}" sorttable_customkey="{{model.u_score}}">
+                    {% if model.summary_link %}{{ model.u_grade }}{% if model.u_grade|length == 1 %}&nbsp;&nbsp;{% endif %}{% else %}&#33;{% endif %}
+                </td>
+              </tr>{% endfor %}
+            </tbody>
+          </table>
+        </section>
+
+        <section id="WIP">
+          {% set var_wip = table_data.items() | selectattr("1.summary_link") | selectattr("1.t_grade", "equalto", "N/A") | list %}  
+          <h3>Summaries currently being evaluated</h3>
+          <p>We are currently evaluating {{ var_wip|length }} public summaries. Their scores and our notes will be published shortly. In the meantime, you can access the public summary through the details page by clicking the model name.</p>          
+          {% if not var_wip %}
+          <p><em>Currently no summaries are under evaluation</em></p>
+          {% else %}
+          <table id="table-WIP" class="sortable">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th class="only-desktop">Provider</th>
+              </tr>
+            </thead>
+            <tbody>{% for label, model in table_data.items()
+              |sort(attribute='1.summed_score',reverse=True)
+              if model.summary_link and (model.t_grade == 'N/A' or model.u_grade == 'N/A') %}
+              <tr>
+                <td class="name-cell">
+                  <a href="evals/{{ model.model_page }}/" target="_blank" title="data: {{ model.filename }}">
+                    <u>{{ model.model_name }}</u>
+                  </a>
+                  <span class="only-mobile">{{ model.org_name }}</span>
+                </td>
+                <td class="only-desktop">
+                  {{ model.org_name }}
+                </td>
+              </tr>{% endfor %}
+            </tbody>
+          </table>
+          {% endif %}
+        </section>
+
+        <section id="missing">
+          <h3>Models with missing summaries</h3>
+          <p>Based on our preliminary analysis, we have assessed the following models as requiring a mandatory public summary, but which we could not discover.</p>
+          <table id="table-missing" class="sortable">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th class="only-desktop">Provider</th>
+              </tr>
+            </thead>
+            <tbody>{% for label, model in table_data.items()
+              |sort(attribute='1.summed_score',reverse=True)
+              if not model.summary_link %}
+              <tr>
+                <td class="name-cell">
+                  <a href="evals/{{ model.model_page }}/" target="_blank" title="data: {{ model.filename }}">
+                    <u>{{ model.model_name }}</u>
+                  </a>
+                  <span class="only-mobile">{{ model.org_name }}</span>
+                </td>
+                <td class="only-desktop">
+                  {{ model.org_name }}
+                </td>
+              </tr>{% endfor %}
+            </tbody>
+          </table>
+        </section>
+
+      </section>
 
       <section id="tldr">
-        <h2>TL;DR</h2>
-        <small style="font-size: 0.75rem;">
-          <p>Our work makes the following <strong>contributions</strong>:</p>
-          <ul>
-            <li>We provide a framework to assess the quality of public summaries of training content required under the AI Act's Article 53(1)(d).</li>
-            <li>Our quality assessment metrics represent best practices for how the information in the public summary should be provided (<i>transparency</i>) in order for rightsholders to utilise it effectively (<i>usefulness</i>).</li>
-            <li>We found only a handful published public summaries, and that they are mostly of a high-quality. Meanwhile other providers, noticeably larger ones, have not published anything yet. Our work sufficiently demonstrates that this is an intentional choice and that the legal obligation is not a burden as the current high-quality summaries are from small organisations and open source oriented efforts.</li>
-          </ul>
-          <p>Our work also contributes towards <strong>improving the ecosystem</strong>:</p>
-          <ul>
-            <li>We content that compliance cannot be <em>fait accompli</em>, and that the public summaries are a key factor in creating transparency and enabling rights enforcement. Towards this, our work also acts as a guide for providers who are yet to publish their summaries to consider how to do so with the highest possible quality and utility.</li>
+        <h2>Why we started this project:</h2>
+        <ul>
+            <li>We contend that compliance cannot be <em>fait accompli</em>, and that the public summaries are a key factor in creating transparency and enabling rights enforcement. Towards this, our work also acts as a guide for providers who are yet to publish their summaries to consider how to do so with the highest possible quality and utility.</li>
             <li>Compliance also invites practices that are intentionally or unintentionally deficient in achieving the goals. Our work serves as a useful tool for describing how and where and why certain practices are 'bad', e.g., where they use obfuscation, do not provide stated information. Using this, we can detect trends or patterns in whether the same issues occur in many summaries, and if so, how they can be collectively addressed through guidance, or enforced with priority.</li>
             <li>The largest challenge in undertaking this work has been finding public summaries as there is no consistent format or practice for how they should be provided. For this, we provide <a href="recommendations">recommendations</a>.</li>
             <li>The template for public summaries provided by the AI Office is intended to be revised with time to improve the state of documentation as well as to better guide the providers. We also provide <a href="recommendations">recommendations</a> for these to improve the quality and accessibility of the public summaries.</li>
-          </ul> 
-        </small>
+          </ul>
       </section>
 {% endblock MAIN %}

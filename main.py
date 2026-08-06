@@ -14,7 +14,8 @@ def main():
     parser.add_argument('-C', '--contact', default=False, action='store_true', help="generate contact page")
     parser.add_argument('-R', '--recommendations', default=False, action='store_true', help="generate recommendations page")
     parser.add_argument('-M', '--methodology', default=False, action='store_true', help="generate methodology page")
-    parser.add_argument('-E', '--evaluations', default=False, action='store_true', help="generate methodology page")
+    parser.add_argument('-E', '--evaluations', default=False, action='store_true', help="generate evaluations")
+    parser.add_argument('-L', '--listsummaries', default=False, action='store_true', help="generate list of summaries")
     parser.add_argument('-B', '--blog', default=False, action='store_true', help="generate blog")
     parser.add_argument('-A', '--all', default=False, action='store_true', help="generate all pages")
     args = parser.parse_args()
@@ -32,10 +33,10 @@ def main():
     if args.all:
         args.home = args.overview = args.contact \
             = args.recommendations = args.methodology \
-            = args.evaluations = args.blog \
+            = args.evaluations = args.listsummaries = args.blog \
             = True
 
-    if any((args.home, args.overview, args.evaluations)):
+    if any((args.home, args.overview, args.evaluations, args.listsummaries)):
         data = calculate()
         # log.DEBUG(data.keys())
 
@@ -52,6 +53,8 @@ def main():
     if args.evaluations:
         for summary in data:
             writer.evaluation(data[summary])
+    if args.listsummaries:
+        writer.list_summaries(data)
     if args.blog:
         writer.blog()
 

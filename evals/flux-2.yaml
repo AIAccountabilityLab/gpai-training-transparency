@@ -2,7 +2,7 @@
 
 # Metadata
 model_name: "FLUX.2"
-model_link: "https://bfl.ai/models/flux-2-max"
+model_link: "https://bfl.ai/models/flux-2"
 organization: "Black Forest Labs"
 org_link: "https://bfl.ai/"
 evaluation_date: ""

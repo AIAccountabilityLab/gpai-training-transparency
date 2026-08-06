@@ -6,7 +6,7 @@ model_link: "https://dev.meta.ai/docs/getting-started/overview"
 organization: "Meta"
 org_link: "https://www.meta.com/"
 evaluation_date: "2026-07-21"
-public_summary_link: "https://scontent-cdg4-2.xx.fbcdn.net/m1/v/t0.84174-6/An9xMwStIQozRLYaee-vSr7pS5-Lw_ehrGZVc7ZqV3zsQjKchhXWc8Db5ilTBhsolBYyFrwH1SjrqvZB_I57i3R1RxDFCTsDz4T7V2AbYonPi8s4HSvzqK8jhbNctEz1omCwR7c?_nc_gid=ysdJnUxZm5-oco3l1t5YEg&_nc_oc=Ado4QLg8VjK5cG0Ahy2vVQR85rS-huUntkgkNpI5JMMtHQAvDoWUg8X8yy8X65ElHG0&ccb=10-5&oh=00_AQDXEjGU5aJbaJ_VFJh5zCogRpTzXIi_Uv7aPsJzRVloUQ&oe=6A61267A&_nc_sid=68f2c3"
+public_summary_link: "https://transparency.meta.com/reports/regulatory-transparency-reports/"
 public_summary_date: "2026-07-08"
 public_summary_location: "https://transparency.meta.com/reports/regulatory-transparency-reports/"
 model_publication_date: "2026-04-08"
@@ -85,8 +85,8 @@ S3: # Public datasets
     notes: ""
 
   D2: # Completeness
-    score: 28
-    max_score: 140
+    score: 12
+    max_score: 92
     notes: ""
 
   D3: # Consistency
@@ -265,4 +265,4 @@ S8: # Data processing
     notes: ""
 
 
-general_notes: "The public summary for MAI Image 2 can be found <a href=\"https://transparency.meta.com/reports/regulatory-transparency-reports/\" target=\"_blank\"> on Meta's transparency reports page</a>. The summary matches the structure of the template. A previous version of the template is missing, despite being implied. The summary links to external pages to provide some key information, resulting in loss of points. We assessed the summary's score to be <span class=\"openness partial\">52.79%</span> with Grade <strong>C</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">48.64%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."
+general_notes: "The public summary for MAI Image 2 can be found <a href=\"https://transparency.meta.com/reports/regulatory-transparency-reports/\" target=\"_blank\"> on Meta's transparency reports page</a>. The summary matches the structure of the template. A previous version of the template is missing, despite being implied. The summary links to external pages to provide some key information, resulting in loss of points. We assessed the summary's score to be <span class=\"openness partial\">53.61%</span> with Grade <strong>C</strong> for <strong><i>transparency</i></strong>, and <span class=\"openness closed\">48.64%</span> with Grade <strong>D+</strong> for <strong><i>usefulness</i></strong>."

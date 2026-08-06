@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Mistral Large 3 675B Base 2512"
-model_link: "https://huggingface.co/mistralai/Mistral-Large-3-675B-Base-2512"
-organization: "Mistral AI"
-org_link: "https://mistral.ai/"
+model_name: "Granite 4.0 H Small Base"
+model_link: "https://huggingface.co/ibm-granite/granite-4.0-h-small-base"
+organization: "IBM"
+org_link: "https://www.ibm.com/us-en"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2025-12-02"
+model_publication_date: "2025-09-16"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 

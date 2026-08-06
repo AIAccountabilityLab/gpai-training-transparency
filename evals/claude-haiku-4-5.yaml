@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "C4AI Command A Plus 05 2026"
-model_link: "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16"
-organization: "Cohere"
-org_link: "https://cohere.com/"
+model_name: "Claude Haiku 4.5"
+model_link: "https://www.anthropic.com/claude/haiku"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2026-05-20"
+model_publication_date: "2025-10-15"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 

@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Aya Vision 32B"
-model_link: "https://huggingface.co/CohereLabs/aya-vision-32b"
-organization: "Cohere"
-org_link: "https://cohere.com/"
+model_name: "GPT-5.6 Terra"
+model_link: "https://chatgpt.com/"
+organization: "OpenAI"
+org_link: "https://openai.com/"
 evaluation_date: ""
-public_summary_link: "" 
+public_summary_link: ""
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2026-01-10"
+model_publication_date: "2026-07-09"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 

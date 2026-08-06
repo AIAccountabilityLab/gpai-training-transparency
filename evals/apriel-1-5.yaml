@@ -3,8 +3,8 @@
 # Metadata
 model_name: "Apriel 1.5 15B Thinker"
 model_link: "https://huggingface.co/ServiceNow-AI/Apriel-1.5-15b-Thinker"
-organization: "OpenAI"
-org_link: "https://openai.com/"
+organization: "ServiceNow"
+org_link: "https://www.servicenow.com/"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""

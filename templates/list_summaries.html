@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}Discovered AI Act Art.53(1)(d) Public Summaries{% endblock TITLE %}
+
+{% block CUSTOM_CSS %}
+article {
+    max-width: 90vw;
+}
+{% endblock CUSTOM_CSS %}
+
+{% block MAIN %}
+{% set count = table_data.items() | selectattr("1.summary_link") | list | length %} 
+    <header>
+        <h1>Discovered Public Summaries</h1>
+        <p style="font-size: 0.8rem;">This page provides a list of the <strong><em>{{ count }} public summaries</em></strong> we have discovered, their source and context, as well as links to our archived copies.</p>
+    </div>
+    </header>
+
+    <section id="collected_summaries">
+        <ul style="list-style-type: none;">
+            {% for label, model in table_data.items() | selectattr("1.summary_link") | sort(attribute='0') %}
+            <li>
+                <strong>{{model.model_name}}</strong> by {{model.org_name}}
+                <br/><small>
+                    We found <a href="{{model.summary_link}}" target="_blank">this document</a> linked on <a href="{{model.summary_location}}" target="_blank">this page</a>. An archived version can be found <a href="../../{{model.summary_archive}}">here</a>.
+                    See our evaluation <a href="./evals/{{model.model_page}}/">here</a>.
+                </small>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock MAIN %}

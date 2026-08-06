@@ -1,15 +1,15 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Devstral 2 123B Instruct 2502"
-model_link: "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512"
-organization: "Mistral AI"
-org_link: "https://mistral.ai/"
+model_name: "Claude Sonnet 4.6"
+model_link: "https://www.anthropic.com/claude/sonnet"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""
 public_summary_location: ""
-model_publication_date: "2025-12-09"
+model_publication_date: "2026-02-17"
 category: "New model" # New model, fine-tuned model
 archive_file_name: ""
 
