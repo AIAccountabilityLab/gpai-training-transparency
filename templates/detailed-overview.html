@@ -38,15 +38,17 @@ li {
 {% endblock CUSTOM_CSS %}
 
 {% block MAIN %}
+{% set count = table_data.items() | selectattr("1.summary_link") | selectattr("1.t_grade", "ne", "N/A") | list | length %} 
     <header>
         <h1>Overview of Quality Assessment Findings</h1>
-        <p style="font-size: 0.8rem;">Below is an overview of our quality assessment for each public summary. We scored each section of the summary based on <a href="methodology">our developed methodology</a>, and then calculated the overall score and grade. Each summary is scored for two dimensions: <strong>Transparency (T)</strong> on how the information is provided, and <strong> Usefulness (U)</strong> for whether it is sufficient for stakeholders' needs. For convenience, all scores are reflected as a percentage (out of hundred) and the grades are expressed on a scale from A+ (highest) to F (lowest). Sections in public summaries that were not filled in because they were not applicable are marked as "N/A". Public summaries not being provided are marked using "<span style="color:red; font-weight: bold;">&#33;</span>". The development of the framework and the evaluation steps are described on our <a href="methodology">methodology page</a> along with a <a href="methodology#FAQ">FAQ</a>.</p>
+        <p style="font-size: 0.8rem;">This page provides an overview of our assessment of <strong><em>{{ count }} public summaries</em></strong>. Each summary is scored for two dimensions: <strong>Transparency (T)</strong> on how the information is provided, and <strong> Usefulness (U)</strong> for whether it is sufficient for stakeholders' needs. For convenience, all scores are reflected as a percentage (out of hundred) and the grades are expressed on a scale from A+ (highest) to F (lowest). Sections in public summaries that were not filled in because they were not applicable are marked as "N/A". {# Public summaries not being provided are marked using "<span style="color:red; font-weight: bold;">&#33;</span>". #} You can click on the model name for a detailed description of the scores and our notes. The evaluation steps are described on our <a href="methodology">methodology page</a> along with a <a href="methodology#FAQ">FAQ</a>.</p>
+        <p style="font-size: 0.75rem;"><strong><em>Note that this page does not display models whose summaries we are <a href="./#WIP">currently evaluating</a> nor models for which a public summary is <a href="./#missing">currently missing</a>.</em></strong>
     </div>
     </header>
 
     <section id="results">
         <div id="table-wrapper">
-        <table id="evaluations" class="table-mobile">
+        <table id="evaluations" class="table-mobile sortable">
             <thead>
                 <tr class="main-header">
                     <th>Section&rarr;</th>
@@ -86,7 +88,9 @@ li {
                 </tr>
             </thead>
             <tbody>
-                {% for label, model in table_data.items()|sort(attribute='1.summed_score', reverse=True) %}
+                {% for label, model in table_data.items()
+              |sort(attribute='1.summed_score',reverse=True)
+              if model.t_grade != 'N/A' and model.u_grade != 'N/A'  %}
                 <tr class="row-a">
                     <td class="name-cell"><a href="evals/{{ model.model_page }}/"><u>{{ model.model_name }}</u></a></td>
                     {% if model.summary_link %}<td class="outline {{ model.t_col }} data-cell grade">{{ model.t_grade|pad|safe }}</td>
@@ -107,7 +111,9 @@ li {
     <section id="collected_summaries">
         <p><strong>Source and Analysis</strong>
         <ul style="list-style-type: none;">
-            {% for label, model in table_data.items()|sort(attribute='0') %}
+            {% for label, model in table_data.items()
+              |sort(attribute='0')
+              if model.t_grade != 'N/A' and model.u_grade != 'N/A'  %}
             <li>
                 <strong>{{model.model_name}}</strong> by {{model.org_name}}
                 <br/><small>
