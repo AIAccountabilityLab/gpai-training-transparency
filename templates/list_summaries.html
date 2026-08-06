@@ -9,7 +9,7 @@ article {
 {% endblock CUSTOM_CSS %}
 
 {% block MAIN %}
-{% set count = table_data.items() | selectattr("1.summary_link") | selectattr("1.t_grade", "ne", "N/A") | list | length %} 
+{% set count = table_data.items() | selectattr("1.summary_link") | list | length %} 
     <header>
         <h1>Discovered Public Summaries</h1>
         <p style="font-size: 0.8rem;">This page provides a list of the <strong><em>{{ count }} public summaries</em></strong> we have discovered, their source and context, as well as links to our archived copies.</p>
@@ -18,7 +18,7 @@ article {
 
     <section id="collected_summaries">
         <ul style="list-style-type: none;">
-            {% for label, model in table_data.items() | selectattr("1.summary_link") | selectattr("1.t_grade", "ne", "N/A") | sort(attribute='0') %}
+            {% for label, model in table_data.items() | selectattr("1.summary_link") | sort(attribute='0') %}
             <li>
                 <strong>{{model.model_name}}</strong> by {{model.org_name}}
                 <br/><small>

@@ -3,7 +3,7 @@
 # Metadata
 model_name: "MAI Code 1 Flash"
 model_link: "https://microsoft.ai/models/mai-code-1-flash/"
-organization: "Microsoft AI"
+organization: "Microsoft"
 org_link: "https://microsoft.ai/"
 evaluation_date: "2026-08-04"
 public_summary_link: "https://microsoft.ai/pdf/MAI-Code-1-Flash-Data-Card.PDF" 
