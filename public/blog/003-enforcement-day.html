@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enforcement day is here! 39 public summaries assessed, 20 still missing</title>
     <meta name="color-scheme" content="light only">
-    <!-- <link rel="stylesheet" href="../../static/pico/pico.min.css"> -->
-    <link rel="stylesheet" href="../../static/pico/pico.classless.violet.min.css">
-    <link rel="stylesheet" href="../../static/custom.css">
-    <!-- <link href="../../static/styles.css" rel="stylesheet"/> -->
-    <script src="../../static/sorttable.js"></script>
+    <!-- <link rel="stylesheet" href="../static/pico/pico.min.css"> -->
+    <link rel="stylesheet" href="../static/pico/pico.classless.violet.min.css">
+    <link rel="stylesheet" href="../static/custom.css">
+    <!-- <link href="../static/styles.css" rel="stylesheet"/> -->
+    <script src="../static/sorttable.js"></script>
     <style>
 body {
     font-size: 0.75rem;
@@ -22,8 +22,21 @@ ul li {
     border: 1px solid black;
     margin-bottom: 5px;
 }
+      .sticky-popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        background: #F33;
+        color: #fff;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        z-index: 999;
+      }
     </style>
-    <link href="../../static/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="../static/favicon.png" rel="icon" type="image/x-icon"/>
   </head>
 <body>
   <nav>
@@ -41,12 +54,12 @@ ul li {
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
     <ul id="main-menu" class="menu">
-      <li><a href="../../">Home</a></li>
-      <li><a href="../../detailed-overview">Analysis</a></li>
-      <li><a href="../../methodology">Methodology</a></li>
-      <li><a href="../../recommendations">Recommendations</a></li>
-      <li><a href="../../blog/">Blog</a></li>
-      <li style="margin-right: 5px;"><a href="../../about">Contact</a></li>
+      <li><a href="../">Home</a></li>
+      <li><a href="../detailed-overview">Analysis</a></li>
+      <li><a href="../methodology">Methodology</a></li>
+      <li><a href="../recommendations">Recommendations</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li style="margin-right: 5px;"><a href="../about">Contact</a></li>
     </ul>
   </nav>
   <main class="container">
