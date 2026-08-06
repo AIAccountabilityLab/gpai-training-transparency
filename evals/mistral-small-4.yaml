@@ -1,7 +1,7 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Mistral Small 4 119B 2603"
+model_name: "Mistral Small 4"
 model_link: "https://huggingface.co/mistralai/Mistral-Large-3-675B-Base-2512"
 organization: "Mistral AI"
 org_link: "https://mistral.ai/"

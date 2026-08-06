@@ -1,7 +1,7 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Granite 4.1 30B Base"
+model_name: "Granite 4.1"
 model_link: "https://huggingface.co/ibm-granite/granite-4.1-30b-base"
 organization: "IBM"
 org_link: "https://www.ibm.com/us-en"
