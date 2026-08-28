@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Public data source transparency</title>
+    <meta name="color-scheme" content="light only">
+    <!-- <link rel="stylesheet" href="../static/pico/pico.min.css"> -->
+    <link rel="stylesheet" href="../static/pico/pico.classless.violet.min.css">
+    <link rel="stylesheet" href="../static/custom.css">
+    <!-- <link href="../static/styles.css" rel="stylesheet"/> -->
+    <script src="../static/sorttable.js"></script>
+    <style>
+body {
+    font-size: 0.75rem;
+}
+ul li {
+    list-style: none;
+}
+.post {
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+      .sticky-popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        background: #F33;
+        color: #fff;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        z-index: 999;
+      }
+    </style>
+    <link href="../static/favicon.png" rel="icon" type="image/x-icon"/>
+  </head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="https://aial.ie">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;background:black;border-radius:50%;padding:0.2rem;">
+            <img src="https://aial.ie/logo.png" style="max-width:100%;max-height:100%;object-fit:contain;">
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://aial.ie">AIAL</a>
+      </li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+    <ul id="main-menu" class="menu">
+      <li><a href="../">Home</a></li>
+      <li><a href="../detailed-overview">Analysis</a></li>
+      <li><a href="../methodology">Methodology</a></li>
+      <li><a href="../recommendations">Recommendations</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li style="margin-right: 5px;"><a href="../about">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <article>
+    <header style="border-bottom: 2px solid black;">
+        <h1>Public data source transparency</h1>
+        <p><small><i>2026-08-28 | The summaries of public training data are encouraged to have a lot of information on public data sources used. However, we find that in general the information provided is lacking.</i></small></p>
+    </header>
+
+    <section id="content">
+        <p>Article 53(1)(d) of the EU AI Act requires providers to disclose a public summary of the data used to train their models, following a provided template. On this site, we work to evaluate such summaries in order to determine to what extent they meet the requirements outlined in the template. In this blog post, we summarize our findings regarding evaluations of a single section of the public summaries, section 2.1, which concerns itself with the disclosure of information about public data sources used to train the model.  We determine that, though disclosure in this section is sporadically done well, the provision of information by <a href="https://dl.acm.org/doi/10.1145/3805689.3806740">Big AI</a> organizations in particular generally fails to meet disclosure ideals.</p>
+
+<h2>General information</h2>
+
+<p>First, a note on scope. Section 2.1 limits itself strictly to ‘publicly available’ datasets. ‘Publicly available’ here entails that a dataset is (1) compiled by a third party, (2) made publicly available for free, and (3) is readily downloadable, either as a whole or in predefined chunks. As such, it does not pertain to, and should not contain, (1) datasets created by the provider themselves and subsequently made publicly available (which belong either in Section 2.3, 2.4, 2.5, or 2.6 depending on content), (2) datasets that are not publicly available, and are instead acquired through a license agreement or some means from a third party (which belong in Section 2.2 about private datasets), (3) datasets made available by third parties, but not in a publicly available manner, such as datasets exclusively available through personal correspondence with the author (which belong in the same sections as the first category). </p>
+
+<p>Section 2.1 splits its requirements for the provision of public datasets into two parts. First, it requires that each <ul>large</ul> dataset used in training (with ‘large’ defined as at least 3% of the training data for a given modality after preprocessing) be reported exactly, and that all datasets which are not considered ‘large’ under the above definition are described generally. That is, the datasets should be explicitly named in such a way that they can be exactly identified. A link to the dataset is required if it exists, and otherwise the dataset should be described in such a way to at least include the start and end dates of data collection.  A general description for filtering should be provided in cases where only part of a given dataset was used.</p>
+
+<p>Second, the section requires a general description of all other publicly available datasets through high-level prose. Suggested information includes the types of modality included in data, the nature of the data’s content, the linguistic characteristics of the data, and the times of collection. Examples of datasets which <em>should</em> be included Section 2.1 include datasets made available on public repositories (such as HuggingFace), specialized websites, as well as CommonCrawl snapshots.</p>
+
+<h2>Practical disclosure -- main issues</h2>
+
+<p>In practice, we see a distinct lack of disclosure for this section, especially among BigAI companies. Most often, organisations which train the biggest AI models only disclose use of the CommonCrawl. The general description of other datasets is commonly even left empty, with the implication being that essentially ‘only the Common Crawl’ was used. We view this as highly unlikely, given that raw CC is generally not considered high-quality data. Most <a href="https://osai-index.eu">open-data large language models</a> incorporate large numbers of datasets of various sizes, and so the description should provide comprehensive information about such data. Given that the goal of the template is to facilitate rightsholders, we believe that disclosure should be done in such a way as to allow a rightsholder to determine which, if any, public data might be subject to licensing restrictions. The current narrow descriptions do not do so.</p>
+
+<p>What is more, the CommonCrawl consists of many different snapshots, and its data is almost always filtered. Providers rarely indicate which snapshots were used in the training of their model and do not disclose the filtering methodologies they use. This runs in stark contrast to the suggestions provided by the template. We would encourage providers, particularly among BigAI, to rectify these problems to ensure that rightsholders are able to properly make use of the template as a source of information on what publicly available data current large language models are trained on.</p>
+
+<p>The CommonCrawl is a crawl of the entire internet. By only listing it as a source without any information on how data was filtered, providers are answering a question analogous to “where did you get this information?” with a generic “the internet”, failing to meet even grade school standards of sourcing.</p>
+
+<h2>Practical disclosures -- minor issues</h2>
+
+<p>Besides these main issues, we also observed several smaller issues in this section in individual summaries. First, we observed cases where the list of large datasets was missing entirely (Phi-4) or contained only minimal/unnecessary information (Grok 4.5, Gemini 3 family, Muse Spark, Muse Image, Gemma 4, Nova 2 lite). Second, we observed limited instances of providers providing unneeded datasets in the list of large publicly available datasets (Domyn Large) and general description (SmolLM3). Third, we observed a case where the modalities indicated for public data were relatively unlikely (Muse Image, where a text-to-image model was declared to include public video and audio data). Last, we observed a single instance of some superfluous information being provided in the section for additional comments (Minimax M3).</p>
+
+<h2>Conclusion</h2>
+
+<p>In general, we see poor compliance with this particular aspect of the template of public training data. By providing little practical information, providers take away from the ability of rightsholders to identify key rights issues in public data sourcing. This, in turn, hurts the broader ecosystem of rights enforcement particularly as it pertains to LLMs.</p>
+
+    </section>
+    </article>
+  </main>
+  <footer>
+    <p>This work has received funding from the Mozilla Foundation. The AIAL is supported by grants from following groups: the AI Collaborative, an Initiative of the Omidyar Group; Luminate; the Bestseller Foundation; the European Artificial Intelligence & Society Fund; and the John D. and Catherine T. MacArthur Foundation. Our Host Institute are: <br/>
+      <a href="https://tcd.ie/"><img src="https://aial.ie/tcd-logo.png" alt="Trinity College Dublin Logo" width="150" height="100" style="box-shadow: none;"></a>
+      <a href="https://adaptcentre.ie/"><img src="https://aial.ie/adapt-logo.png" alt="The Adapt Centre Logo" width="60" height="50" style="box-shadow: none;"></a>
+    </p>
+  </footer>
+
+<script>
+  const button = document.querySelector('.hamburger');
+  const menu = document.getElementById('main-menu');
+
+  button.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    button.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</body>
+</html>
