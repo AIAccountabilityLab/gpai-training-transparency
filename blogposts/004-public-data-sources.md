@@ -1,5 +1,5 @@
 Public data source transparency
-2026-08-28
+2026-08-31
 The summaries of public training data are encouraged to have a lot of information on public data sources used. However, we find that in general the information provided is lacking.
 ---
 
