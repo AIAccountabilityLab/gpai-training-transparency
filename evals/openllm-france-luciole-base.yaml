@@ -9,6 +9,7 @@ public_summary_location: https://dl.labs.linagora.com/files/models/OpenLLM-Franc
 model_publication_date: '2026-06-02 08:00:00'
 category: New
 archive_file_name: OpenLLM_France_Luciole_2026_09_08.pdf
+general_notes: ''
 S1:
   D1:
     score: 7.0

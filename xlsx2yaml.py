@@ -50,9 +50,9 @@ DATA_SCHEMA = {
         "model_publication_date": "B19",
         "category": "B20",
         "archive_file_name": "B21",
-        # "general_notes": "B433", # handle as special case - multiple lines
         # TODO: previous_versions is an array calculated from files
     },
+    "general_notes": "B433", # handle as special case - multiple lines
     "scores": {
         "S1": {
             "D1": {
@@ -347,6 +347,11 @@ for sheet in sheet_selected:
             print(f"Treating as null...")
             value = ""
         data[fieldname] = value
+    # general notes is a special case
+    # if sheet[DATA_SCHEMA['general_notes']].value:
+    #     # there are notes, extract them
+    #     # TODO: multiple para
+    data['general_notes'] = sheet[DATA_SCHEMA['general_notes']].value or ""
     for section, sectionscells in DATA_SCHEMA['scores'].items():
         sectiondata = {}
         for metric, metriccells in sectionscells.items():

@@ -9,6 +9,7 @@ public_summary_location: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-base-2512
 model_publication_date: '2026-05-21 08:00:00'
 category: New
 archive_file_name: PLLuM_2512_base_2026_08_06.pdf
+general_notes: ''
 S1:
   D1:
     score: 6.0

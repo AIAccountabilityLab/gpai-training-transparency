@@ -9,6 +9,7 @@ public_summary_location: https://huggingface.co/microsoft/Phi-4-reasoning-vision
 model_publication_date: '2026-03-04 08:00:00'
 category: Fine-tune
 archive_file_name: None
+general_notes: ''
 S1:
   D1:
     score: 6.0
