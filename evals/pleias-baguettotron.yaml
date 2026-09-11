@@ -12,7 +12,7 @@ archive_file_name: Pleias_Baguettotron_2026_09_08.pdf
 general_notes: ''
 S1:
   D1:
-    score: 5.0
+    score: 6.0
     max_score: 8.0
     notes: ''
   D2:
@@ -28,7 +28,7 @@ S1:
     max_score: 5.0
     notes: ''
   D5:
-    score: 6.5
+    score: 8.5
     max_score: 10.0
     notes: ''
   D6:
@@ -37,7 +37,7 @@ S1:
     notes: ''
 S2:
   D1:
-    score: 40.0
+    score: 45.0
     max_score: 45.0
     notes: ''
   D2:
@@ -57,7 +57,7 @@ S2:
     max_score: 5.0
     notes: ''
   D6:
-    score: 10.0
+    score: 11.0
     max_score: 11.0
     notes: ''
 S3:
