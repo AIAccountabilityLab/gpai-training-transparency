@@ -1,4 +1,4 @@
-model_name: Nemotron Nano
+model_name: Nemotron Nano 12B v2
 model_link: https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-NVFP4-QAD
 organization: NVIDIA
 org_link: https://www.nvidia.com/
