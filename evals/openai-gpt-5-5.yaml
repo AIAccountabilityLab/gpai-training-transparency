@@ -116,7 +116,7 @@ S4: # Private datasets
     notes: "General description of non-publicly known private datasets obtained from third parties contains some superfluous information."
 
   D2: # Completeness
-    score: 24
+    score: 23
     max_score: 88
     notes: "General description of non-publicly known private datasets obtained from third parties lack recommended information."
 
