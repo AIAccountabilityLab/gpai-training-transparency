@@ -1,17 +1,17 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "FLUX.2"
-model_link: "https://bfl.ai/models/flux-2"
-organization: "Black Forest Labs"
-org_link: "https://bfl.ai/"
+model_name: "Claude Opus 5.5"
+model_link: "https://www.anthropic.com/claude/opus"
+organization: "Anthropic"
+org_link: "https://www.anthropic.com/"
 evaluation_date: ""
-public_summary_link: "" 
-public_summary_date: ""
-public_summary_location: ""
-model_publication_date: "2025-11-25"
+public_summary_link: "https://trust.anthropic.com/resources" 
+public_summary_date: "2026-09-22"
+public_summary_location: "https://trust.anthropic.com/resources"
+model_publication_date: "2026-09-22"
 category: "New model" # New model, fine-tuned model
-archive_file_name: ""
+archive_file_name: "Claude_Opus_5_5_2026_09_28.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
