@@ -153,3 +153,6 @@ debug.txt
 
 # macOS
 .DS_Store
+
+# Conversion script
+xlsx2yaml.py
