@@ -22,6 +22,13 @@ ul li {
     border: 1px solid black;
     margin-bottom: 5px;
 }
+table {
+    width: 100%;
+    font-size: 0.85em;
+}
+th, td {
+    padding: 4px 6px;
+}
       .sticky-popup {
         position: fixed;
         bottom: 20px;
@@ -76,157 +83,1522 @@ ul li {
 
 <h2>TL;DR</h2>
 
-<p>| # | Model |
-| ----: | :---- |
-| 1 | Baguettotron and Monad |
-| 2 | Pleias 1.0 |
-| 3 | Apertus |
-| 4 | Luciole Base |
-| 5 | FIBO |
-| 6 | Bria 3.2 |
-| 7 | Luciole Instruct 1.1 |
-| 8 | SmolLM3-3B |
-| 9 | Domyn Large |
-| 10 | Bielik v3 11B Instruct |
-| 11 | PLLuM-12B-base-2512 |
-| 12 | Adobe Firefly |
-| 13 | Nemotron 3 and 3.5 Family |
-| 14 | Inkling |
-| 15 | Inkling Small |
-| 16 | FLUX.3 |
-| 17 | Nova 2 Lite |
-| 18 | Nemotron Nano 12B v2 |
-| 19 | FastwebMIIA |
-| 20 | MAI Cyber 1 Flash |
-| 21 | MAI Code 1.1 Flash |
-| 22 | Minimax M3 |
-| 23 | MAI Code 1 Flash |
-| 24 | MAI-Image-2.5 |
-| 25 | Ministral 3 14B |
-| 26 | Ministral 3 8B |
-| 27 | Ministral 3 3B |
-| 28 | MAI-Image-2 |
-| 29 | GPT-5.6 Luna |
-| 30 | Apertus v1.5 |
-| 31 | GPT-5.5 |
-| 32 | GPT-6 Astra |
-| 33 | GPT-5.2 |
-| 34 | GPT-5.4 Nano |
-| 35 | GPT Images 2.0 |
-| 36 | Grok 4.5 |
-| 37 | Grok Voice Think Fast 2.0 |
-| 38 | Hy3 |
-| 39 | Gemma 4 |
-| 40 | Gemini 3 Pro |
-| 41 | Mistral Small 4 |
-| 42 | Mistral Large 3 |
-| 43 | Mythos 5.1 / Fable 5.1 |
-| 44 | Command A+ |
-| 45 | Claude Opus 5 |
-| 46 | Claude Opus 4.8 |
-| 47 | Claude Mythos 5 / Claude Fable 5 |
-| 48 | Claude Mythos Preview |
-| 49 | Claude Sonnet 5 |
-| 50 | Claude Opus 4.7 |
-| 51 | Muse Image |
-| 52 | Muse Glimmer |
-| 53 | Muse Spark |
-| 54 | Phi 4 Reasoning Vision 15B |
-| 55 | Seed 2.0 Pro |
-| 56 | Seedance 2.5 |
-| 57 | Seedance 2.0 |
-| 58 | Seedream 5.0 Pro |
-| 59 | Midjourney Image and Video family |
-| 60 | DeepSeek-V4 |
-| 61 | Phi-4 |</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right;">#</th>
+  <th style="text-align:left;">Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right;">1</td>
+  <td style="text-align:left;">Baguettotron and Monad</td>
+</tr>
+<tr>
+  <td style="text-align:right;">2</td>
+  <td style="text-align:left;">Pleias 1.0</td>
+</tr>
+<tr>
+  <td style="text-align:right;">3</td>
+  <td style="text-align:left;">Apertus</td>
+</tr>
+<tr>
+  <td style="text-align:right;">4</td>
+  <td style="text-align:left;">Luciole Base</td>
+</tr>
+<tr>
+  <td style="text-align:right;">5</td>
+  <td style="text-align:left;">FIBO</td>
+</tr>
+<tr>
+  <td style="text-align:right;">6</td>
+  <td style="text-align:left;">Bria 3.2</td>
+</tr>
+<tr>
+  <td style="text-align:right;">7</td>
+  <td style="text-align:left;">Luciole Instruct 1.1</td>
+</tr>
+<tr>
+  <td style="text-align:right;">8</td>
+  <td style="text-align:left;">SmolLM3-3B</td>
+</tr>
+<tr>
+  <td style="text-align:right;">9</td>
+  <td style="text-align:left;">Domyn Large</td>
+</tr>
+<tr>
+  <td style="text-align:right;">10</td>
+  <td style="text-align:left;">Bielik v3 11B Instruct</td>
+</tr>
+<tr>
+  <td style="text-align:right;">11</td>
+  <td style="text-align:left;">PLLuM-12B-base-2512</td>
+</tr>
+<tr>
+  <td style="text-align:right;">12</td>
+  <td style="text-align:left;">Adobe Firefly</td>
+</tr>
+<tr>
+  <td style="text-align:right;">13</td>
+  <td style="text-align:left;">Nemotron 3 and 3.5 Family</td>
+</tr>
+<tr>
+  <td style="text-align:right;">14</td>
+  <td style="text-align:left;">Inkling</td>
+</tr>
+<tr>
+  <td style="text-align:right;">15</td>
+  <td style="text-align:left;">Inkling Small</td>
+</tr>
+<tr>
+  <td style="text-align:right;">16</td>
+  <td style="text-align:left;">FLUX.3</td>
+</tr>
+<tr>
+  <td style="text-align:right;">17</td>
+  <td style="text-align:left;">Nova 2 Lite</td>
+</tr>
+<tr>
+  <td style="text-align:right;">18</td>
+  <td style="text-align:left;">Nemotron Nano 12B v2</td>
+</tr>
+<tr>
+  <td style="text-align:right;">19</td>
+  <td style="text-align:left;">FastwebMIIA</td>
+</tr>
+<tr>
+  <td style="text-align:right;">20</td>
+  <td style="text-align:left;">MAI Cyber 1 Flash</td>
+</tr>
+<tr>
+  <td style="text-align:right;">21</td>
+  <td style="text-align:left;">MAI Code 1.1 Flash</td>
+</tr>
+<tr>
+  <td style="text-align:right;">22</td>
+  <td style="text-align:left;">Minimax M3</td>
+</tr>
+<tr>
+  <td style="text-align:right;">23</td>
+  <td style="text-align:left;">MAI Code 1 Flash</td>
+</tr>
+<tr>
+  <td style="text-align:right;">24</td>
+  <td style="text-align:left;">MAI-Image-2.5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">25</td>
+  <td style="text-align:left;">Ministral 3 14B</td>
+</tr>
+<tr>
+  <td style="text-align:right;">26</td>
+  <td style="text-align:left;">Ministral 3 8B</td>
+</tr>
+<tr>
+  <td style="text-align:right;">27</td>
+  <td style="text-align:left;">Ministral 3 3B</td>
+</tr>
+<tr>
+  <td style="text-align:right;">28</td>
+  <td style="text-align:left;">MAI-Image-2</td>
+</tr>
+<tr>
+  <td style="text-align:right;">29</td>
+  <td style="text-align:left;">GPT-5.6 Luna</td>
+</tr>
+<tr>
+  <td style="text-align:right;">30</td>
+  <td style="text-align:left;">Apertus v1.5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">31</td>
+  <td style="text-align:left;">GPT-5.5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">32</td>
+  <td style="text-align:left;">GPT-6 Astra</td>
+</tr>
+<tr>
+  <td style="text-align:right;">33</td>
+  <td style="text-align:left;">GPT-5.2</td>
+</tr>
+<tr>
+  <td style="text-align:right;">34</td>
+  <td style="text-align:left;">GPT-5.4 Nano</td>
+</tr>
+<tr>
+  <td style="text-align:right;">35</td>
+  <td style="text-align:left;">GPT Images 2.0</td>
+</tr>
+<tr>
+  <td style="text-align:right;">36</td>
+  <td style="text-align:left;">Grok 4.5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">37</td>
+  <td style="text-align:left;">Grok Voice Think Fast 2.0</td>
+</tr>
+<tr>
+  <td style="text-align:right;">38</td>
+  <td style="text-align:left;">Hy3</td>
+</tr>
+<tr>
+  <td style="text-align:right;">39</td>
+  <td style="text-align:left;">Gemma 4</td>
+</tr>
+<tr>
+  <td style="text-align:right;">40</td>
+  <td style="text-align:left;">Gemini 3 Pro</td>
+</tr>
+<tr>
+  <td style="text-align:right;">41</td>
+  <td style="text-align:left;">Mistral Small 4</td>
+</tr>
+<tr>
+  <td style="text-align:right;">42</td>
+  <td style="text-align:left;">Mistral Large 3</td>
+</tr>
+<tr>
+  <td style="text-align:right;">43</td>
+  <td style="text-align:left;">Mythos 5.1 / Fable 5.1</td>
+</tr>
+<tr>
+  <td style="text-align:right;">44</td>
+  <td style="text-align:left;">Command A+</td>
+</tr>
+<tr>
+  <td style="text-align:right;">45</td>
+  <td style="text-align:left;">Claude Opus 5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">46</td>
+  <td style="text-align:left;">Claude Opus 4.8</td>
+</tr>
+<tr>
+  <td style="text-align:right;">47</td>
+  <td style="text-align:left;">Claude Mythos 5 / Claude Fable 5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">48</td>
+  <td style="text-align:left;">Claude Mythos Preview</td>
+</tr>
+<tr>
+  <td style="text-align:right;">49</td>
+  <td style="text-align:left;">Claude Sonnet 5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">50</td>
+  <td style="text-align:left;">Claude Opus 4.7</td>
+</tr>
+<tr>
+  <td style="text-align:right;">51</td>
+  <td style="text-align:left;">Muse Image</td>
+</tr>
+<tr>
+  <td style="text-align:right;">52</td>
+  <td style="text-align:left;">Muse Glimmer</td>
+</tr>
+<tr>
+  <td style="text-align:right;">53</td>
+  <td style="text-align:left;">Muse Spark</td>
+</tr>
+<tr>
+  <td style="text-align:right;">54</td>
+  <td style="text-align:left;">Phi 4 Reasoning Vision 15B</td>
+</tr>
+<tr>
+  <td style="text-align:right;">55</td>
+  <td style="text-align:left;">Seed 2.0 Pro</td>
+</tr>
+<tr>
+  <td style="text-align:right;">56</td>
+  <td style="text-align:left;">Seedance 2.5</td>
+</tr>
+<tr>
+  <td style="text-align:right;">57</td>
+  <td style="text-align:left;">Seedance 2.0</td>
+</tr>
+<tr>
+  <td style="text-align:right;">58</td>
+  <td style="text-align:left;">Seedream 5.0 Pro</td>
+</tr>
+<tr>
+  <td style="text-align:right;">59</td>
+  <td style="text-align:left;">Midjourney Image and Video family</td>
+</tr>
+<tr>
+  <td style="text-align:right;">60</td>
+  <td style="text-align:left;">DeepSeek-V4</td>
+</tr>
+<tr>
+  <td style="text-align:right;">61</td>
+  <td style="text-align:left;">Phi-4</td>
+</tr>
+</tbody>
+</table>
 
-<p>| # | Identified issue |
-| ----: | :---- |
-| <strong>1.1</strong> | Failures to provide substantive descriptions of private data: descriptions of acquisition agreements in place of describing data contents |
-| <strong>1.2</strong> | Failures to provide substantive descriptions of private data: generic references to key data aspects (“domains”, “contexts”, etc.) |
-| <strong>1.3</strong> | Failures to provide substantive descriptions of private data: rights-management description instead of dataset description |
-| <strong>2.1</strong> | Incomplete description of contents: missing information about the nature of contents |
-| <strong>2.2</strong> | Incomplete description of contents:Missing linguistic characteristics |
-| <strong>2.3</strong> | Incomplete description of contents:Missing information about modalities |
-| <strong>3.1</strong> | Vaguely declining to provide a substantive answer: Through use of ‘N/A’ |
-| <strong>3.2</strong> | Vaguely declining to provide a substantive answer: Missing dataset versions / explanations, missing references to further information |
-| <strong>3.3</strong> | Vaguely declining to provide a substantive answer: Missing fields |
-| <strong>4.1</strong> | Structure deviations: ‘Other’ options |
-| <strong>4.2</strong> | Structure deviations: Field collapse |
-| <strong>4.3</strong> | Structure deviations: Information which should be provided elsewhere |
-| <strong>5.1</strong> | ‘Licensing’ definitions: Inconsistent use of licensing terminology |
-| <strong>6.1</strong> | Model granularity: What happens when a single summary is provided for meaningfully different models? |
-| <strong>6.2</strong> | Model granularity: No base model indicated |</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right;">#</th>
+  <th style="text-align:left;">Identified issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right;"><strong>1.1</strong></td>
+  <td style="text-align:left;">Failures to provide substantive descriptions of private data: descriptions of acquisition agreements in place of describing data contents</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>1.2</strong></td>
+  <td style="text-align:left;">Failures to provide substantive descriptions of private data: generic references to key data aspects (“domains”, “contexts”, etc.)</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>1.3</strong></td>
+  <td style="text-align:left;">Failures to provide substantive descriptions of private data: rights-management description instead of dataset description</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>2.1</strong></td>
+  <td style="text-align:left;">Incomplete description of contents: missing information about the nature of contents</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>2.2</strong></td>
+  <td style="text-align:left;">Incomplete description of contents:Missing linguistic characteristics</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>2.3</strong></td>
+  <td style="text-align:left;">Incomplete description of contents:Missing information about modalities</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>3.1</strong></td>
+  <td style="text-align:left;">Vaguely declining to provide a substantive answer: Through use of ‘N/A’</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>3.2</strong></td>
+  <td style="text-align:left;">Vaguely declining to provide a substantive answer: Missing dataset versions / explanations, missing references to further information</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>3.3</strong></td>
+  <td style="text-align:left;">Vaguely declining to provide a substantive answer: Missing fields</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>4.1</strong></td>
+  <td style="text-align:left;">Structure deviations: ‘Other’ options</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>4.2</strong></td>
+  <td style="text-align:left;">Structure deviations: Field collapse</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>4.3</strong></td>
+  <td style="text-align:left;">Structure deviations: Information which should be provided elsewhere</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>5.1</strong></td>
+  <td style="text-align:left;">‘Licensing’ definitions: Inconsistent use of licensing terminology</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>6.1</strong></td>
+  <td style="text-align:left;">Model granularity: What happens when a single summary is provided for meaningfully different models?</td>
+</tr>
+<tr>
+  <td style="text-align:right;"><strong>6.2</strong></td>
+  <td style="text-align:left;">Model granularity: No base model indicated</td>
+</tr>
+</tbody>
+</table>
 
-<p>| # | 1.1 | 1.2 | 1.3 | 2.1 | 2.2 | 2.3 | 3.1 | 3.2 | 3.3 | 4.1 | 4.2 | 4.3 | 5.1 | 6.1 | 6.2 | 7.1 |
-| ----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ✓ |
-| 4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ✓ |
-| 5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 6 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 7 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 9 |  |  |  |  |  |  |  |  |  |  | ✓ |  |  |  |  |  |
-| 10 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 11 |  |  |  |  |  |  |  |  |  |  |  |  |  | ✓ |  |  |
-| 12 |  |  |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |
-| 13 |  |  |  |  | ✓ |  |  | ✓ |  |  |  |  | ✓ |  | ✓ |  |
-| 14 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 15 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 16 | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 17 |  |  |  |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 18 |  |  |  |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 19 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 20 |  |  | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 21 |  |  | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 22 |  |  |  |  | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 23 |  |  | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 24 |  |  |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 26 | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 27 | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 28 |  |  |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |  |
-| 29 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |  |  |  |
-| 30 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 31 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |  |  |  |
-| 32 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |  |  |  |
-| 33 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |  |  |  |
-| 34 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |  |  |  |
-| 35 |  |  |  |  |  |  |  |  |  | ✓ |  | ✓ |  |  |  |  |
-| 36 |  | ✓ |  | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |  |
-| 37 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 38 |  |  |  |  |  | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 39 |  |  |  |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 40 |  |  |  |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 41 | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 42 | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |  |  |  |  |  |  |
-| 43 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 44 |  |  |  |  |  |  |  |  | ✓ |  |  | ✓ |  |  |  |  |
-| 45 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 46 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 47 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 48 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 49 |  | ✓ |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |
-| 50 |  | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |  |
-| 51 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 52 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 53 |  |  |  |  | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 54 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 55 |  |  |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 56 |  |  |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 57 |  |  |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 58 |  |  |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 59 | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  |  |  | ✓ |  |  |
-| 60 |  | ✓ |  | ✓ | ✓ |  | ✓ |  |  |  |  |  |  |  |  |  |
-| 61 |  |  |  |  |  | ✓ |  |  |  |  |  |  |  |  |  |  |</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right;">#</th>
+  <th style="text-align:center;">1.1</th>
+  <th style="text-align:center;">1.2</th>
+  <th style="text-align:center;">1.3</th>
+  <th style="text-align:center;">2.1</th>
+  <th style="text-align:center;">2.2</th>
+  <th style="text-align:center;">2.3</th>
+  <th style="text-align:center;">3.1</th>
+  <th style="text-align:center;">3.2</th>
+  <th style="text-align:center;">3.3</th>
+  <th style="text-align:center;">4.1</th>
+  <th style="text-align:center;">4.2</th>
+  <th style="text-align:center;">4.3</th>
+  <th style="text-align:center;">5.1</th>
+  <th style="text-align:center;">6.1</th>
+  <th style="text-align:center;">6.2</th>
+  <th style="text-align:center;">7.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right;">1</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">2</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">3</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+</tr>
+<tr>
+  <td style="text-align:right;">4</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+</tr>
+<tr>
+  <td style="text-align:right;">5</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">6</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">7</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">8</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">9</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">10</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">11</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">12</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">13</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">14</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">15</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">16</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">17</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">18</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">19</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">20</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">21</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">22</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">23</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">24</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">25</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">26</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">27</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">28</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">29</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">30</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">31</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">32</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">33</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">34</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">35</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">36</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">37</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">38</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">39</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">40</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">41</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">42</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">43</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">44</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">45</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">46</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">47</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">48</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">49</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">50</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">51</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">52</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">53</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">54</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">55</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">56</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">57</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">58</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">59</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">60</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+<tr>
+  <td style="text-align:right;">61</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;">✓</td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+  <td style="text-align:center;"></td>
+</tr>
+</tbody>
+</table>
 
 <h2>Failures to provide substantive descriptions of private data</h2>
 
 <h3>Descriptions of acquisition agreements in place of describing data contents</h3>
 
-<p>Observed in: FLUX.3; Ministral 3 14B; Ministral 3 8B; Ministral 3 3B; Mistral Small 4; Mistral Large 3; Midjourney Image and Video family</p>
+<p><em>Observed in: FLUX.3; Ministral 3 14B; Ministral 3 8B; Ministral 3 3B; Mistral Small 4; Mistral Large 3; Midjourney Image and Video family</em></p>
 
 <p>In the field asking for a general description of non-publicly known<br />
 private datasets obtained from third parties, we observe several model summaries which engage in the description of acquisition agreements in place of data contents. This is despite the field explicitly asking for the description of datasets. The FLUX.3 model, for instance, only describes its data as “Data acquired from third party providers through confidential commercial agreements and data access partnerships. Data is collected consistent with applicable law.” This description is not descriptive of the contents of the data themselves, and only signals that (presumably not commercially licensed) agreements are in place.</p>
@@ -239,13 +1611,13 @@ private datasets obtained from third parties, we observe several model summaries
 
 <h3>Generic references to key data aspects (“domains”, “third-party-data”, “contexts”)</h3>
 
-<p>Observed in: GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano; Grok 4.5; Mythos 5.1 / Fable 5.1, Claude Opus 5, Claude Opus 4.8, Claude Mythos 5 / Claude Fable 5, Claude Mythos Preview, Claude Sonnet 5, Claude Opus 4.7; DeepSeek-V4</p>
+<p><em>Observed in: GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano; Grok 4.5; Mythos 5.1 / Fable 5.1, Claude Opus 5, Claude Opus 4.8, Claude Mythos 5 / Claude Fable 5, Claude Mythos Preview, Claude Sonnet 5, Claude Opus 4.7; DeepSeek-V4</em></p>
 
 <p>In the same field, we see many occurrences of organizations referring to data contents through generic descriptors. For instance, an organisation may state that it includes data “spanning a diverse set of domains and contexts” (Grok 4.5) rather than enumerating what these domains and contexts are. Or an organisation may provide its description as “The dataset is mainly composed of text data sourced from multiple domains.” (DeepSeek-V4). Such descriptions provide so little information as to be essentially meaningless, and as such do not adhere to the goals of the public summary as a document which empowers rightsholders.</p>
 
 <h3>Rights management description in place of dataset description</h3>
 
-<p>Observed in: FLUX.3; MAI Cyber 1 Flash, MAI Code 1.1 Flash, MAI Code 1 Flash; Midjourney Image and Video family</p>
+<p><em>Observed in: FLUX.3; MAI Cyber 1 Flash, MAI Code 1.1 Flash, MAI Code 1 Flash; Midjourney Image and Video family</em></p>
 
 <p>Lastly, we observe some instances of the general description of non-publicly known<br />
 private datasets obtained from third parties instead describing the way rights were managed in the data. For instance, the summary for the Midjourney Image and Video family provides as a description “Data is covered by agreements that outline the party’s roles and responsibilities with respect to the datasets Midjourney uses.” This entirely pertains to the data agreements in which Midjourney engages rather than the contents of the data. Similarly, the summary for MAI Code 1.1 Flash states that “Acquired text data is vetted for compliance with use rights, applicable data privacy and security laws,<br />
@@ -267,7 +1639,7 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>Through use of ‘N/A’</h3>
 
-<p>Observed in: Adobe Firefly, Inkling, Inkling Small; FLUX.3; Nemotron Nano 12B v2; Minimax M3; Ministral 3 14B, Ministral 3 8B, Ministral 3 3B; GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano; Grok Voice Think Fast 2.0; Hy3; Gemma 4, Gemini 3 Pro; Mistral Small 4, Mistral Large 3; Claude Opus 4.7; Muse Image, Muse Glimmer, Muse Spark; Seed 2.0 Pro, Seedance 2.5, Seedance 2.0, Seedream 5.0 Pro; DeepSeek-V4</p>
+<p><em>Observed in: Adobe Firefly, Inkling, Inkling Small; FLUX.3; Nemotron Nano 12B v2; Minimax M3; Ministral 3 14B, Ministral 3 8B, Ministral 3 3B; GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano; Grok Voice Think Fast 2.0; Hy3; Gemma 4, Gemini 3 Pro; Mistral Small 4, Mistral Large 3; Claude Opus 4.7; Muse Image, Muse Glimmer, Muse Spark; Seed 2.0 Pro, Seedance 2.5, Seedance 2.0, Seedream 5.0 Pro; DeepSeek-V4</em></p>
 
 <p>Many summaries have been observed to decline substantive answers through the use of ‘N/A’. This can easily lead to unclarities about the reason for why the provider believes the relevant field does not apply. For instance, Adobe Firefly responds to the question asking to provide a list of private datasets obtained from other third parties with “N/A”. In this case, it is ambiguous whether Adobe seeks to indicate that none of the private datasets obtained from other third parties are publicly known, or that they do not consider the field otherwise applicable. As such a rightsholder has no way of ascertaining for certain whether Adobe used publicly-known private datasets obtained from third parties outside of commercial licenses for training, this hurts the amount of disclosure in the response. Muse Glimmer, similarly, leaves the corresponding field blank.</p>
 
@@ -275,13 +1647,13 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>Missing dataset versions/explanations, missing references to further information</h3>
 
-<p>Observed in: Nemotron 3 and 3.5 Family</p>
+<p><em>Observed in: Nemotron 3 and 3.5 Family</em></p>
 
 <p>In the only summary which has provided a list of datasets in its answer to “If publicly known, list private datasets obtained from other third parties”, the summary was not found to disclose any dataset versions and explanations, nor references to further information. By instead only naming the datasets themselves, the summary makes it so that rightsholders are not able to determine as easily what datasets the provided identifiers refer to, and in the cases where rightsholders only have certain information in specific versions of the dataset they are unable to determine whether those specific versions ended up in the final model.. The downstream harms of disclosure in this manner are obvious, and so we would encourage providers to be more forthcoming in this manner.</p>
 
 <h3>Missing fields</h3>
 
-<p>Observed in: Adobe Firefly</p>
+<p><em>Observed in: Adobe Firefly</em></p>
 
 <p>Lastly, we observe some summaries which miss key fields altogether. This is the case with Adobe Firefly, where no general description of non-publicly known private datasets obtained from third parties is provided.</p>
 
@@ -289,19 +1661,19 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>‘Other’ options</h3>
 
-<p>Observed in: Minimax M3; Ministral 3 14B, Ministral 3 8B, Ministral 3 3B; GPT-5.6 Luna; GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano, GPT Images 2.0; Mistral Small 4, Mistral Large 3; Command A+</p>
+<p><em>Observed in: Minimax M3; Ministral 3 14B, Ministral 3 8B, Ministral 3 3B; GPT-5.6 Luna; GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano, GPT Images 2.0; Mistral Small 4, Mistral Large 3; Command A+</em></p>
 
 <p>We observe several instances of providers modifying the template to include an ‘other’ option in ‘yes’ or ‘no’ fields. Arguments towards including such a field run both ways. On the one hand, it can be argued that the information desired by the section (licensed data) is too complex to be answered by a simple binary. On the other hand, going beyond the template risks introducing additional unclarities.</p>
 
 <h3>Field collapse</h3>
 
-<p>Observed in: Domyn Large</p>
+<p><em>Observed in: Domyn Large</em></p>
 
 <p>In the summary for Domyn Large, we observe the merging together of several fields. This can introduce additional unclarities in the template through deviations from the intended structure. While merging of fields may be desirable in limited circumstances from the perspective of a model developer, especially when individual fields do not provide much information, we generally caution against it to ensure good interpretability of individual summaries.</p>
 
 <h3>Information which should be provided elsewhere</h3>
 
-<p>Observed in: GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano, GPT Images 2.0</p>
+<p><em>Observed in: GPT-5.6 Luna, GPT-5.5, GPT-6 Astra, GPT-5.2, GPT-5.4 Nano, GPT Images 2.0</em></p>
 
 <p>We observe several models which provide information which should be provided elsewhere. For instance, the summary for GPT-5.6 Luna states in the field “General description of non-publicly known private datasets obtained from third parties” that “OpenAI partnered with third parties to access data spanning a diverse set of domains and contexts to improve GPT-5.6 Luna. Data is accessed in compliance with applicable laws.” This is not relevant for the given field, and provides information (that data is accessed in compliance with applicable laws) which should be provided in fields talking about rights compliance.</p>
 
@@ -309,7 +1681,7 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>Inconsistent use of licensing terminology</h3>
 
-<p>Observed in: Nemotron 3 and 3.5 Family; Command A+</p>
+<p><em>Observed in: Nemotron 3 and 3.5 Family; Command A+</em></p>
 
 <p>We observe several datasets listed by the Nemotron 3 and 3.5 Family summary which arguably do not belong in the field. For instance, SIFT-50M likely does not need to be indicated as a private dataset, as it is freely licensed and seems to be sourced only from publicly accessible data. Similarly, the Granary dataset also likely does not need to be indicated here, though with NVIDIA being the creator and sourcing its data partially from claimed Youtube Commons, it might be the case that some private data was found to be present. Command A+, meanwhile confuses fields 2.2.2 and 2.2.1, explicitly indicating that they include some commercially licensed datasets in the former field. Neither behavior is desirable from a clarity perspective.</p>
 
@@ -317,7 +1689,7 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>Inconsistent modalities</h3>
 
-<p>Observed in: FIBO, Bria 3.2</p>
+<p><em>Observed in: FIBO, Bria 3.2</em></p>
 
 <p>In the summaries of FIBO and Bria 3.2, we observe an inconsistency between the sources of private data indicated in the private datasets section and those in the general model details section. The model only indicates use of image data from private datasets, however in its general information states that both text and image data is used. The likely cause of this inconsistency is the question of whether to take image captions as ’text’ data or to consider them part of ‘image’ data. We believe that both modalities should be mentioned, however we also encourage further clarity for this in the template.</p>
 
@@ -325,7 +1697,7 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>What happens when a single summary is provided for meaningfully different models?</h3>
 
-<p>Observed in: PLLuM-12B-base-2512; Midjourney Image and Video family</p>
+<p><em>Observed in: PLLuM-12B-base-2512; Midjourney Image and Video family</em></p>
 
 <p>We observe several summaries which include models with (likely) meaningfully different training data. This is opposed to point (30) of the Explanatory Notice included alongside the template, which states that “The same Summary may be used for different models or different model versions if the content of their respective Summaries is identical.” Including multiple models with different training data in a single summary risks introducing significant unclarities into the summary, as it becomes very difficult to assess, for instance, whether certain training data was included in one model but not the other or whether data used to train a certain model was left out.</p>
 
@@ -335,7 +1707,7 @@ and is covered by agreements describing the roles and responsibilities of the pa
 
 <h3>No base model indicated</h3>
 
-<p>Observed in: Nemotron 3 and 3.5 Family</p>
+<p><em>Observed in: Nemotron 3 and 3.5 Family</em></p>
 
 <p>In the case of the summary for the Nemotron 3 and 3.5 family of models, we observe that the summary is strictly only claimed for the quantifications of the model. The model provider also does not indicate any models on which the model was trained. This is despite different versions of the model family being published separately on HuggingFace. Although this represents only a relatively minor drafting error, as the inference can easily be made that the summary is intended to also cover the other models which are part of the same large pretraining run, this is still something which should be clarified.</p>
 

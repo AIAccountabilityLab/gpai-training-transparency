@@ -20,7 +20,7 @@ def get_posts():
             'title': title,
             'date': date,
             'description': description,
-            'content': markdown2.markdown(content),
+            'content': markdown2.markdown(content, extras=["tables"]),
             'url': filename,
             })
 
