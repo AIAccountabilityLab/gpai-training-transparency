@@ -161,8 +161,7 @@ In this blog post, we outline key issues identified with regards to disclosure w
 
 _Observed in: FLUX.3; Ministral 3 14B; Ministral 3 8B; Ministral 3 3B; Mistral Small 4; Mistral Large 3; Midjourney Image and Video family_
 
-In the field asking for a general description of non-publicly known  
-private datasets obtained from third parties, we observe several model summaries which engage in the description of acquisition agreements in place of data contents. This is despite the field explicitly asking for the description of datasets. The FLUX.3 model, for instance, only describes its data as “Data acquired from third party providers through confidential commercial agreements and data access partnerships. Data is collected consistent with applicable law.” This description is not descriptive of the contents of the data themselves, and only signals that (presumably not commercially licensed) agreements are in place.
+In the field asking for a general description of non-publicly known private datasets obtained from third parties, we observe several model summaries which engage in the description of acquisition agreements in place of data contents. This is despite the field explicitly asking for the description of datasets. The FLUX.3 model, for instance, only describes its data as “Data acquired from third party providers through confidential commercial agreements and data access partnerships. Data is collected consistent with applicable law.” This description is not descriptive of the contents of the data themselves, and only signals that (presumably not commercially licensed) agreements are in place.
 
 Similarly, the corresponding description for Mistral 4 Small states that “Mistral AI works with a variety of third-party providers for access to synthetically generated and human-curated datasets. These datasets are obtained and curated using industry-standards and accessed under commercial or partnership agreements with the relevant contractual guarantees.” While this does specify that the data is synthetically generated and human-curated, beyond this it only provides information about the agreement.
 
@@ -180,9 +179,7 @@ In the same field, we see many occurrences of organizations referring to data co
 
 _Observed in: FLUX.3; MAI Cyber 1 Flash, MAI Code 1.1 Flash, MAI Code 1 Flash; Midjourney Image and Video family_
 
-Lastly, we observe some instances of the general description of non-publicly known  
-private datasets obtained from third parties instead describing the way rights were managed in the data. For instance, the summary for the Midjourney Image and Video family provides as a description “Data is covered by agreements that outline the party’s roles and responsibilities with respect to the datasets Midjourney uses.” This entirely pertains to the data agreements in which Midjourney engages rather than the contents of the data. Similarly, the summary for MAI Code 1.1 Flash states that “Acquired text data is vetted for compliance with use rights, applicable data privacy and security laws,  
-and is covered by agreements describing the roles and responsibilities of the parties with respect to the data.” Which restricts the description to talking about rights management.
+Lastly, we observe some instances of the general description of non-publicly known private datasets obtained from third parties instead describing the way rights were managed in the data. For instance, the summary for the Midjourney Image and Video family provides as a description “Data is covered by agreements that outline the party’s roles and responsibilities with respect to the datasets Midjourney uses.” This entirely pertains to the data agreements in which Midjourney engages rather than the contents of the data. Similarly, the summary for MAI Code 1.1 Flash states that “Acquired text data is vetted for compliance with use rights, applicable data privacy and security laws, and is covered by agreements describing the roles and responsibilities of the parties with respect to the data.” Which restricts the description to talking about rights management.
 
 ## Incomplete description of contents
 
