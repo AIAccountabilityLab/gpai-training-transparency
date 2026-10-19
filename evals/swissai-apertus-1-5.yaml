@@ -5,14 +5,14 @@ model_name: "Apertus v1.5"
 model_link: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/tree/main"
 organization: "Swiss AI Initiative"
 org_link: "https://www.swiss-ai.org/"
-evaluation_date: "2026-08-05"
-public_summary_link: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/main/Apertus_1_5_EU_Public_Summary.pdf"
-public_summary_date: "2026-07-17"
-public_summary_location: "https://huggingface.co/swiss-ai/Apertus-v1.5-70B"
+evaluation_date: "2026-10-19"
+public_summary_link: "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf"
+public_summary_date: "2026-10-06"
+public_summary_location: "https://github.com/swiss-ai/apertus-legal/"
 model_publication_date: "2026-07-14"
 category: "New model" # New model, fine-tuned model
-archive_file_name: "Apertus_1_5_2026_08_05.pdf"
-previous_versions:
+archive_file_name: "Apertus_1_5_2026_10_19.pdf"
+previous_versions: "Apertus_1_5_2026_08_05.pdf"
 
 # Requirement assessments
 # Each requirement should be assessed once with a score from 0-10
@@ -39,7 +39,7 @@ S1: # Document-level requirements
     notes: ""
 
   D5: # Accessibility
-    score: 10
+    score: 7
     max_score: 10
     notes: ""
 
@@ -143,12 +143,12 @@ S4: # Private datasets
 
 S5: # Scraped/crawled data
   D1: # Clarity
-    score: 0
+    score: 97
     max_score: 129
     notes: ""
 
   D2: # Completeness
-    score: 3
+    score: 129
     max_score: 158
     notes: ""
 
@@ -158,17 +158,17 @@ S5: # Scraped/crawled data
     notes: ""
 
   D4: # Correctness
-    score: 3
+    score: 78
     max_score: 93
     notes: ""
 
   D5: # Accessibility
-    score: 0
+    score: 25
     max_score: 25
     notes: ""
 
   D6: # Comprehension
-    score: 0
+    score: 58
     max_score: 58
     notes: ""
 
