@@ -248,6 +248,8 @@ def calculate():
             'improvements': identify_improvements(colored_full_scores),
             'previous_versions': template_info.get('previous_versions', [])
         }
+        if type(page_data['previous_versions']) is not list:
+            page_data['previous_versions'] = [page_data['previous_versions']]
         # log.DEBUG(pformat(page_data))
         eval_data[file_name] = page_data
 
