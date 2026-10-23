@@ -75,7 +75,7 @@ S2: # General information
 
   D6: # Comprehension
     score: 11
-    max_score: 14
+    max_score: 11
     notes: ""
 
 S3: # Public datasets

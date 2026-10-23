@@ -67,7 +67,7 @@ S2: # General information
 
   D4: # Correctness
     score: 17
-    max_score: 23
+    max_score: 22
     notes: "Model dependencies should include SmolLM3-3B-Base. Date of placement on the Union market should be indicated."
 
   D5: # Accessibility

@@ -49,7 +49,7 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 35
+    score: 30
     max_score: 40
     notes: ""
 
