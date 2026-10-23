@@ -18,7 +18,7 @@ archive_file_name: "FLUX_3_2026_08_03.pdf"
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 10
+    score: 9
     max_score: 11
     notes: ""
 
@@ -33,7 +33,7 @@ S1: # Document-level requirements
     notes: ""
 
   D4: # Correctness
-    score: 4
+    score: 3
     max_score: 5
     notes: ""
 
@@ -43,7 +43,7 @@ S1: # Document-level requirements
     notes: ""
 
   D6: # Comprehension
-    score: 8
+    score: 6
     max_score: 9
     notes: ""
 

@@ -18,7 +18,7 @@ archive_file_name: "FIBO_2026_08_03.pdf"
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 10
+    score: 9.5
     max_score: 11
     notes: ""
 
@@ -38,12 +38,12 @@ S1: # Document-level requirements
     notes: ""
 
   D5: # Accessibility
-    score: 7
+    score: 8.5
     max_score: 10
     notes: ""
 
   D6: # Comprehension
-    score: 8
+    score: 6
     max_score: 9
     notes: ""
 

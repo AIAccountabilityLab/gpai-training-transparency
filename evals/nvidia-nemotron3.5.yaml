@@ -12,19 +12,19 @@ archive_file_name: NVIDIA_Nemotron_3_5_2026_09_08.pdf
 general_notes: ''
 S1:
   D1:
-    score: 6.0
-    max_score: 8.0
+    score: 8.0
+    max_score: 11.0
     notes: ''
   D2:
-    score: 0.0
-    max_score: 4.0
-    notes: ''
-  D3:
     score: 4.0
     max_score: 4.0
     notes: ''
+  D3:
+    score: 7.0
+    max_score: 7.0
+    notes: ''
   D4:
-    score: 2.0
+    score: 4.0
     max_score: 5.0
     notes: ''
   D5:

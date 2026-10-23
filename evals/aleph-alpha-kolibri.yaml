@@ -18,8 +18,8 @@ archive_file_name: "https://aleph-alpha.com/en/kolibri/"
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 3
-    max_score: 8
+    score: 9
+    max_score: 11
     notes: ""
 
   D2: # Completeness
@@ -33,7 +33,7 @@ S1: # Document-level requirements
     notes: ""
 
   D4: # Correctness
-    score: 5
+    score: 4.5
     max_score: 6
     notes: ""
 

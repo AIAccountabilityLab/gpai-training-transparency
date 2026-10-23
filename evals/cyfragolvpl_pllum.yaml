@@ -12,8 +12,8 @@ archive_file_name: PLLuM_2512_base_2026_08_06.pdf
 general_notes: ''
 S1:
   D1:
-    score: 6.0
-    max_score: 8.0
+    score: 9.0
+    max_score: 11.0
     notes: ''
   D2:
     score: 4.0
@@ -24,8 +24,8 @@ S1:
     max_score: 4.0
     notes: ''
   D4:
-    score: 4.0
-    max_score: 5.0
+    score: 7.0
+    max_score: 8.0
     notes: ''
   D5:
     score: 10.0
@@ -33,7 +33,7 @@ S1:
     notes: ''
   D6:
     score: 6.0
-    max_score: 7.0
+    max_score: 9.0
     notes: ''
 S2:
   D1:

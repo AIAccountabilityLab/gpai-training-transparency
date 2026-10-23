@@ -20,7 +20,7 @@ previous_versions:
 # Leave blank for N/A, and assign a max score of 0
 S1: # Document-level requirements
   D1: # Clarity
-    score: 9
+    score: 9.5
     max_score: 11
     notes: "Document should clearly indicate whether it is the latest version or if it is outdated and a replacement is made available, as well as provide a link to all versions of the document."
 
@@ -40,7 +40,7 @@ S1: # Document-level requirements
     notes: "Document should have assured integrity, provide an authoritative source of the document, and have a correct date format."
 
   D5: # Accessibility
-    score: 7
+    score: 8.5
     max_score: 10
     notes: "Document should be provided in the same context as the model."
 

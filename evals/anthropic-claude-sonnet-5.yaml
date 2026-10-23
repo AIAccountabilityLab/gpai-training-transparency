@@ -38,7 +38,7 @@ S1: # Document-level requirements
     notes: ""
 
   D5: # Accessibility
-    score: 8.5
+    score: 7
     max_score: 10
     notes: ""
 
