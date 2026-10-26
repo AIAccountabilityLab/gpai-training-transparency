@@ -71,7 +71,7 @@ S3:
     notes: ''
   D3: # Consistency
     score: 3.0
-    max_score: 23.0
+    max_score: 3.0
     notes: ''
   D4: # Correctness
     score: 4.0

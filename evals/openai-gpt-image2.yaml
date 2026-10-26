@@ -8,7 +8,8 @@ public_summary_date: '2026-07-30 08:00:00'
 public_summary_location: https://help.openai.com/en/articles/12141645-eu-ai-act-openai-resources-and-customer-guidance
 model_publication_date: '2026-04-21 08:00:00'
 category: New
-archive_file_name: None
+archive_file_name: "GPT_Image_2_2026_08_17.pdf"
+
 general_notes: ''
 S1:
   D1: # Clarity
@@ -66,7 +67,7 @@ S3:
     max_score: 92.0
     notes: ''
   D2: # Completeness
-    score: 91.0
+    score: 81.0
     max_score: 111.0
     notes: ''
   D3: # Consistency

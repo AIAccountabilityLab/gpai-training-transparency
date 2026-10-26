@@ -49,12 +49,12 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 26
-    max_score: 40
+    score: 25
+    max_score: 39
     notes: ""
 
   D2: # Completeness
-    score: 49
+    score: 48
     max_score: 67
     notes: ""
 
@@ -64,7 +64,7 @@ S2: # General information
     notes: ""
 
   D4: # Correctness
-    score: 21
+    score: 19
     max_score: 21
     notes: ""
 

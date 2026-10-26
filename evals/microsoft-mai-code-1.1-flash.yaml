@@ -8,7 +8,8 @@ public_summary_date: '2026-08-11 08:00:00'
 public_summary_location: https://microsoft.ai/models/mai-code-1-flash/
 model_publication_date: '2026-03-04 08:00:00'
 category: Fine-tune
-archive_file_name: None
+archive_file_name: MAI_Code_1_1_Flash_2026_10_26.pdf
+
 general_notes: ''
 S1:
   D1: # Clarity

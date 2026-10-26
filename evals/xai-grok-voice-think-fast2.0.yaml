@@ -87,23 +87,23 @@ S3:
     notes: ''
 S4:
   D1: # Clarity
-    score: 16.0
+    score: 72.0
     max_score: 72.0
     notes: ''
   D2: # Completeness
-    score: 37.0
-    max_score: 88.0
+    score: 53.0
+    max_score: 85.0
     notes: ''
   D3: # Consistency
     score: 3.0
     max_score: 3.0
     notes: ''
   D4: # Correctness
-    score: 21.0
+    score: 41.0
     max_score: 41.0
     notes: ''
   D5: # Accessibility
-    score: 0.0
+    score: 20.0
     max_score: 20.0
     notes: ''
   D6: # Comprehension
