@@ -51,13 +51,13 @@ S1: # Document-level requirements
 
 S2: # General information
   D1: # Clarity
-    score: 12
-    max_score: 24
+    score: 12.5
+    max_score: 30
     notes: "Provider contact details refer to a generic contact point. Date of latest data acquisition should have the right format. Section 'Description of the linguistic characteristics of the overall training data' missing."
 
   D2: # Completeness
     score: 45
-    max_score: 57
+    max_score: 69
     notes: "Section 'Description of the linguistic characteristics of the overall training data' missing."
 
   D3: # Consistency

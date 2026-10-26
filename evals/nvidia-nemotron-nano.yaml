@@ -38,7 +38,7 @@ S1:
 S2:
   D1: # Clarity
     score: 27.0
-    max_score: 47.0
+    max_score: 41.0
     notes: ''
   D2: # Completeness
     score: 68.0
@@ -50,7 +50,7 @@ S2:
     notes: ''
   D4: # Correctness
     score: 16.0
-    max_score: 23.0
+    max_score: 17.0
     notes: ''
   D5: # Accessibility
     score: 5.0

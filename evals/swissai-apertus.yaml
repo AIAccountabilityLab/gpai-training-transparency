@@ -57,7 +57,7 @@ S2: # General information
 
   D2: # Completeness
     score: 51
-    max_score: 62
+    max_score: 74
     notes: "Description of the linguistic characteristics of the overall training data: Missing info on language and EU languages.<br/><br/>Our suggestion: given the large number of languages used in pretraining (999+), mention the EU languages covered, e.g. 'text from all EU languages was used in the training of this model', with perhaps a link to the list of language-script pairs or where to find info on languages. This would already provide enough information to writers of a given language to be able to see whether training may have spanned their writing in that language."
 
   D3: # Consistency

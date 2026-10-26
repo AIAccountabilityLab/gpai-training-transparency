@@ -57,7 +57,7 @@ S2: # General information
 
   D2: # Completeness
     score: 51
-    max_score: 62
+    max_score: 74
     notes: ""
 
   D3: # Consistency

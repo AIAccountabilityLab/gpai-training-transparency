@@ -54,7 +54,7 @@ S2: # General information
     notes: "Contact details refer to general business address, generic contact point. Description of types of content describes goals for which content is included. Languages are not described exactly (i.e. as a list), EU languages are not fully mentioned."
 
   D2: # Completeness
-    score: 49
+    score: 48
     max_score: 72
     notes: "No links to additional publicly available documentation are provided with versioned model name. National, regional, demographic specificities of training data not provided."
 

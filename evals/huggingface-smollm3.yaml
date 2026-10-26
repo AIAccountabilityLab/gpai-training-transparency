@@ -57,7 +57,7 @@ S2: # General information
 
   D2: # Completeness
     score: 54
-    max_score: 65
+    max_score: 77
     notes: "Model dependencies should include SmolLM3-3B-Base. Date of placement on the Union market should be indicated."
 
   D3: # Consistency

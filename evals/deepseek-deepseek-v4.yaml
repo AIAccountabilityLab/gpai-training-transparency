@@ -38,10 +38,10 @@ S1:
 S2:
   D1: # Clarity
     score: 19.0
-    max_score: 43.0
+    max_score: 42.0
     notes: ''
   D2: # Completeness
-    score: 55.0
+    score: 54.0
     max_score: 81.0
     notes: ''
   D3: # Consistency
@@ -49,7 +49,7 @@ S2:
     max_score: 8.0
     notes: ''
   D4: # Correctness
-    score: 12.0
+    score: 17.0
     max_score: 18.0
     notes: ''
   D5: # Accessibility
