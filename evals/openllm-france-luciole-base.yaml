@@ -11,202 +11,202 @@ category: New
 archive_file_name: OpenLLM_France_Luciole_2026_09_08.pdf
 general_notes: ''
 S1:
-  D1:
+  D1: # Clarity
     score: 10.0
     max_score: 11.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 4.0
     max_score: 4.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 7.0
     max_score: 7.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 4.0
     max_score: 5.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 7.0
     max_score: 10.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 6.0
     max_score: 9.0
     notes: ''
 S2:
-  D1:
+  D1: # Clarity
     score: 42.0
     max_score: 42.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 70.0
     max_score: 76.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 8.0
     max_score: 8.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 21.0
     max_score: 21.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 5.0
     max_score: 5.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 10.0
     max_score: 11.0
     notes: ''
 S3:
-  D1:
+  D1: # Clarity
     score: 60.0
     max_score: 92.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 79.0
     max_score: 79.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 23.0
     max_score: 23.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 23.0
     max_score: 23.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 20.0
     max_score: 20.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 19.0
     max_score: 19.0
     notes: ''
 S4:
-  D1:
+  D1: # Clarity
     score: 0.0
     max_score: 0.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 2.0
     max_score: 2.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 3.0
     max_score: 3.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 2.0
     max_score: 2.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 0.0
     max_score: 0.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 0.0
     max_score: 0.0
     notes: ''
 S5:
-  D1:
+  D1: # Clarity
     score: 0.0
     max_score: 0.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 3.0
     max_score: 3.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 3.0
     max_score: 3.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 3.0
     max_score: 3.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 0.0
     max_score: 0.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 0.0
     max_score: 0.0
     notes: ''
 S6:
-  D1:
+  D1: # Clarity
     score: 0.0
     max_score: 0.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 8.0
     max_score: 8.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 3.0
     max_score: 3.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 8.0
     max_score: 8.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 0.0
     max_score: 0.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 0.0
     max_score: 0.0
     notes: ''
 S7:
-  D1:
+  D1: # Clarity
     score: 13.0
     max_score: 25.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 19.0
     max_score: 19.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 6.0
     max_score: 6.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 19.0
     max_score: 19.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 0.0
     max_score: 0.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 0.0
     max_score: 0.0
     notes: ''
 S8:
-  D1:
+  D1: # Clarity
     score: 19.0
     max_score: 19.0
     notes: ''
-  D2:
+  D2: # Completeness
     score: 19.0
     max_score: 19.0
     notes: ''
-  D3:
+  D3: # Consistency
     score: 3.0
     max_score: 3.0
     notes: ''
-  D4:
+  D4: # Correctness
     score: 37.0
     max_score: 37.0
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 15.0
     max_score: 15.0
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 69.0
     max_score: 69.0
     notes: ''

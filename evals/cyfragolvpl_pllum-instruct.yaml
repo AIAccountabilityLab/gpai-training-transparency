@@ -11,202 +11,202 @@ category: Fine-tune
 archive_file_name: PLLuM_2512_instruct_2026_09_11.pdf
 general_notes: ''
 S1:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S2:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S3:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S4:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S5:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S6:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S7:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
 S8:
-  D1:
+  D1: # Clarity
     score: 
     max_score: 
     notes: ''
-  D2:
+  D2: # Completeness
     score: 
     max_score: 
     notes: ''
-  D3:
+  D3: # Consistency
     score: 
     max_score: 
     notes: ''
-  D4:
+  D4: # Correctness
     score: 
     max_score: 
     notes: ''
-  D5:
+  D5: # Accessibility
     score: 
     max_score: 
     notes: ''
-  D6:
+  D6: # Comprehension
     score: 
     max_score: 
     notes: ''
