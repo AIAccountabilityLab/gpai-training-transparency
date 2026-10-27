@@ -124,7 +124,7 @@ S5:
     max_score: 3.0
     notes: ''
   D4: # Correctness
-    score: 48.0
+    score: 61.0
     max_score: 93.0
     notes: ''
   D5: # Accessibility
@@ -183,7 +183,7 @@ S7:
     notes: ''
   D6: # Comprehension
     score: 0.0
-    max_score: 24.0
+    max_score: 12.0
     notes: ''
 S8:
   D1: # Clarity

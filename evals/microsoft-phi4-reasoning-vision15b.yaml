@@ -188,11 +188,11 @@ S7:
 S8:
   D1: # Clarity
     score: 0.0
-    max_score: 24.0
+    max_score: 18.0
     notes: ''
   D2: # Completeness
     score: 3.0
-    max_score: 24.0
+    max_score: 18.0
     notes: ''
   D3: # Consistency
     score: 3.0
@@ -200,7 +200,7 @@ S8:
     notes: ''
   D4: # Correctness
     score: 3.0
-    max_score: 37.0
+    max_score: 21.0
     notes: ''
   D5: # Accessibility
     score: 0.0
@@ -208,5 +208,5 @@ S8:
     notes: ''
   D6: # Comprehension
     score: 0.0
-    max_score: 69.0
+    max_score: 54.0
     notes: ''

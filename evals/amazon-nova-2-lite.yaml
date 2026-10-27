@@ -204,12 +204,12 @@ S6: # User data
 
 S7: # Synthetic & other
   D1: # Clarity
-    score: 53
+    score: 47
     max_score: 65
     notes: ""
 
   D2: # Completeness
-    score: 23
+    score: 29
     max_score: 47
     notes: ""
 

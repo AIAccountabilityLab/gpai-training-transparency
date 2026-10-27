@@ -238,8 +238,8 @@ S7: # Synthetic & other
 S8: # Data processing
   D1: # Clarity
     score: 18
-    max_score: 19
-    notes: "Information in 3.3 is not all relevant to data processing aspects and measures taken before or after training model."
+    max_score: 18
+    notes: ""
 
   D2: # Completeness
     score: 19

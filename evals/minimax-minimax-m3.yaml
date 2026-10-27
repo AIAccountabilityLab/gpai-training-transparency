@@ -193,7 +193,7 @@ S6: # User data
     notes: ""
 
   D5: # Accessibility
-    score: 0
+    score: 15
     max_score: 15
     notes: ""
 
@@ -204,12 +204,12 @@ S6: # User data
 
 S7: # Synthetic & other
   D1: # Clarity
-    score: 65
+    score: 59
     max_score: 65
     notes: ""
 
   D2: # Completeness
-    score: 35
+    score: 41
     max_score: 47
     notes: ""
 
