@@ -55,6 +55,7 @@ DATA_SCHEMA = {
     "general_notes": "B433", # handle as special case - multiple lines
     "scores": {
         "S1": {
+            "name": "...",
             "D1": {
                 "score": "C376",
                 "max_score": "D376",
