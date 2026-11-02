@@ -5,7 +5,7 @@ model_name: "MAI-Image-2.6"
 model_link: "https://microsoft.ai/models/mai-image-2-6/"
 organization: "Microsoft"
 org_link: "https://microsoft.ai/"
-evaluation_date: 
+evaluation_date: 2026-09-11
 public_summary_link: "https://microsoft.ai/pdf/MAI-Image-2.6-Data-Summary.pdf"
 public_summary_date: "2026-09-04"
 public_summary_location: "https://microsoft.ai/models/mai-image-2-6/"
