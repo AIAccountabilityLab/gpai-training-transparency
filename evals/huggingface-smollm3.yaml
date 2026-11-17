@@ -4,7 +4,7 @@
 model_name: "SmolLM3-3B"
 model_link: "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
 organization: "HuggingFace"
-org_link: "https://huggingface.co/HuggingFaceTB"
+org_link: "https://huggingface.co/"
 evaluation_date: "2026-03-31"
 public_summary_link: "https://huggingface.co/spaces/hfmlsoc/smollm3-eu-data-transparency"
 public_summary_date: "2025-07-25"

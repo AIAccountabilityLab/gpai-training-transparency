@@ -4,7 +4,7 @@
 model_name: "DiffusionGemma 26B A4B IT"
 model_link: "https://huggingface.co/google/diffusiongemma-26B-A4B-it"
 organization: "Google"
-org_link: "https://huggingface.co/google"
+org_link: "https://google.com"
 evaluation_date: ""
 public_summary_link: "" 
 public_summary_date: ""
