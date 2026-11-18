@@ -1,7 +1,7 @@
 model_name: PLLuM-12B-instruct-2512
 model_link: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-instruct-2512
 organization: Ministry of Digital Affairs of Poland
-org_link: https://www.gov.pl/web/cyfryzacja
+org_link: https://pllum.org.pl/
 evaluation_date: 
 public_summary_link: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-instruct-2512/blob/main/PLLuM_2512_instruct_Public_Summary_of_Training_Content.pdf
 public_summary_date: 2026-06-11
