@@ -1,7 +1,7 @@
 # Model Documentation Evaluation Template
 
 # Metadata
-model_name: "Adobe Firefly"
+model_name: "Firefly Video Model 2"
 model_link: "https://www.adobe.com/products/firefly.html"
 organization: "Adobe"
 org_link: "https://www.adobe.com/"
@@ -20,12 +20,12 @@ S1: # Document-level requirements
   D1: # Clarity
     score: 9
     max_score: 11
-    notes: ""
+    notes: "D16: Current status not indicated; D19: No link to all versions of the document provided"
 
   D2: # Completeness
-    score: 1
+    score: 0
     max_score: 4
-    notes: ""
+    notes: "D23: Version missing; D28: No date of last update"
 
   D3: # Consistency
     score: 7
@@ -33,40 +33,40 @@ S1: # Document-level requirements
     notes: ""
 
   D4: # Correctness
-    score: 3
+    score: 2
     max_score: 5
-    notes: ""
+    notes: "D18: No link to the authoritative source provided; D29: No date; D30: No date"
 
   D5: # Accessibility
-    score: 7
-    max_score: 10
-    notes: ""
+    score: 6
+    max_score: 13
+    notes: "D2: Disclosed on a related model page, but not in the same context, and this decreases findability; D12: Not disclosed along a distribution channel; D24: No links provided"
 
   D6: # Comprehension
     score: 6
     max_score: 9
-    notes: ""
+    notes: "D15: No changes from previous version indicated; D17: No notice location indicated"
 
 S2: # General information
   D1: # Clarity
-    score: 20
-    max_score: 37
-    notes: ""
+    score: 25
+    max_score: 38
+    notes: "F1.3.d.3: Date provided in completely wrong format; F1.3.e.2: Languages not listed; F1.3.f.3: No other relevant information provided"
 
   D2: # Completeness
-    score: 55
+    score: 52
     max_score: 78
-    notes: ""
+    notes: "F1.2.a.3: No additional documentation provided; F1.3.e.1: No languages described; F1.3.e.3: No EU languages mentioned; F1.3.f.1: No national/regional specificities disclosed; F1.3.f.2: No demographic specificities disclosed"
 
   D3: # Consistency
-    score: 8
-    max_score: 8
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
     score: 15
-    max_score: 15
-    notes: ""
+    max_score: 21
+    notes: "F1.3.f.4: Superfluous information provided"
 
   D5: # Accessibility
     score: 0
@@ -76,32 +76,32 @@ S2: # General information
   D6: # Comprehension
     score: 13
     max_score: 14
-    notes: ""
+    notes: "F1.3.d.5: Not indicated"
 
 S3: # Public datasets
   D1: # Clarity
-    score: 52
-    max_score: 52
+    score: 32
+    max_score: 32
     notes: ""
 
   D2: # Completeness
-    score: 44
-    max_score: 76
-    notes: ""
+    score: 33
+    max_score: 97
+    notes: "F2.1.d.3: No information about the types of modality provided; F2.1.d.4: No information relating to the nature of content found; F2.1.d.5: No information provided relating to the linguistic characteristics; F2.1.d.6: No information relating to approximate start and end dates, and no \"not known\""
 
   D3: # Consistency
-    score: 23
-    max_score: 23
+    score: 3
+    max_score: 3
     notes: ""
 
   D4: # Correctness
-    score: 20
-    max_score: 20
+    score: 17
+    max_score: 17
     notes: ""
 
   D5: # Accessibility
-    score: 20
-    max_score: 20
+    score: 0
+    max_score: 0
     notes: ""
 
   D6: # Comprehension
@@ -111,14 +111,14 @@ S3: # Public datasets
 
 S4: # Private datasets
   D1: # Clarity
-    score: 0
-    max_score: 16
+    score: 32
+    max_score: 32
     notes: ""
 
   D2: # Completeness
-    score: 8
+    score: 56
     max_score: 88
-    notes: ""
+    notes: "F2.2.2.d.5: Field does not describe linguistic characteristics; F2.2.2.d.6: Field does not describe other relevant characteristics"
 
   D3: # Consistency
     score: 3
@@ -126,8 +126,8 @@ S4: # Private datasets
     notes: ""
 
   D4: # Correctness
-    score: 8
-    max_score: 8
+    score: 24
+    max_score: 24
     notes: ""
 
   D5: # Accessibility
@@ -136,19 +136,19 @@ S4: # Private datasets
     notes: ""
 
   D6: # Comprehension
-    score: 0
-    max_score: 0
+    score: 16
+    max_score: 16
     notes: ""
 
 S5: # Scraped/crawled data
   D1: # Clarity
-    score: 14
-    max_score: 14
+    score: 0
+    max_score: 0
     notes: ""
 
   D2: # Completeness
-    score: 64
-    max_score: 103
+    score: 3
+    max_score: 3
     notes: ""
 
   D3: # Consistency
@@ -157,18 +157,18 @@ S5: # Scraped/crawled data
     notes: ""
 
   D4: # Correctness
-    score: 58
-    max_score: 58
+    score: 3
+    max_score: 3
     notes: ""
 
   D5: # Accessibility
-    score: 25
-    max_score: 25
+    score: 0
+    max_score: 0
     notes: ""
 
   D6: # Comprehension
-    score: 38
-    max_score: 38
+    score: 0
+    max_score: 0
     notes: ""
 
 S6: # User data
@@ -204,7 +204,7 @@ S6: # User data
 
 S7: # Synthetic & other
   D1: # Clarity
-    score: 36
+    score: 48
     max_score: 48
     notes: ""
 
@@ -230,13 +230,13 @@ S7: # Synthetic & other
 
   D6: # Comprehension
     score: 0
-    max_score: 12
-    notes: ""
+    max_score: 24
+    notes: "F2.5.c.4: No link provided; F2.5.d.3: No description of model's training data, nor statement that this is not known"
 
 S8: # Data processing
   D1: # Clarity
-    score: 0
-    max_score: 0
+    score: 18
+    max_score: 18
     notes: ""
 
   D2: # Completeness
@@ -250,8 +250,8 @@ S8: # Data processing
     notes: ""
 
   D4: # Correctness
-    score: 18
-    max_score: 18
+    score: 36
+    max_score: 36
     notes: ""
 
   D5: # Accessibility
@@ -260,9 +260,9 @@ S8: # Data processing
     notes: ""
 
   D6: # Comprehension
-    score: 33
-    max_score: 51
+    score: 69
+    max_score: 69
     notes: ""
 
 
-general_notes: "Adobe Firefly provides a generally high-quality summary about their training of a model using large amounts of image data. Despite a missing field and describing a lack of data crawling in the data crawling section rather than the 'other sources of data' section, it received good scores for both <strong><i>transparency</i></strong> (<span class=\"openness partial\">71.79%</span> with Grade <strong>C+</strong>) and <strong><i>usefulness</i></strong> (<span class=\"openness open\">82.38%</span> with Grade <strong>B+</strong>)."
+general_notes: "Adobe Firefly provides a generally high-quality summary about their training of a model using large amounts of image and video data. The summary primarily loses points due to a lack of details in some fields and the summary not being disclosed along distribution channels. It received a score of <span class=\"openness open\">77.94%</span> with Grade <strong>B</strong> for <strong><i>transparency</i></strong> and <span class=\"openness open\">80.11%</span> with Grade <strong>B+</strong> for <strong><i>usefulness</i></strong>."
